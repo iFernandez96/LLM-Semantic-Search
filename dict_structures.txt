@@ -1,0 +1,44 @@
+Example Queries:
+Show me all of the areas that have galvanic corrosion on critical areas that have not
+been resolved in the last 30 days.
+	Translates to: F1=K2 && F2=K1 && F3=K0 && F4>=V(Today-30)
+
+F1=K2 && F2=K1 && F3=K0 && F4>=V(Today-30)
+corrosion_type=K2 && risk_level=K1 && res_status=K1 && timestamp=K2
+
+corrosion_type {
+   K1 : “Acidic”,
+   K2 : “Galvanic”
+}
+
+risk_level {
+   K1 : “Critical”,
+   K2 : "High",
+   K3 : "Moderate",
+   K4 : "Low",
+   K5 : "Minimal"
+}
+
+res_status {
+   K1 : “unresolved”,
+   K2 : “in_progress”,
+   K3 : “resolved”
+}
+
+
+can’t ask for something in the future
+Need to be able to go far back, 30 days, so maybe find a way to subtract days from current timestamp
+need to standardize the 
+"""
+from datetime import date
+
+today = date.today()
+print(today) 
+"""
+
+timestamp {
+   K1 : “today”,
+   K2 : “yesterday”
+}
+  
+
