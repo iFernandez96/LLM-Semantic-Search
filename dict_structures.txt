@@ -4,6 +4,8 @@ been resolved in the last 30 days.
 	Translates to: F1=K2 && F2=K1 && F3=K0 && F4>=V(Today-30)
 
 F1=K2 && F2=K1 && F3=K0 && F4>=V(Today-30)
+|
+V
 corrosion_type=K2 && risk_level=K1 && res_status=K1 && timestamp=K2
 
 corrosion_type {
@@ -42,3 +44,17 @@ timestamp {
 }
   
 
+Where is the information for the metadata coming from? Where are we searching for the query?
+if there is a database or something along those lines, 
+can we somehow read from those to gather possible fields and attributes to form dictionaries?
+not applicable right now because we dont have access to those resources
+'''
+for field in database:  
+   if field doesnt exist:
+      add field
+   for item in field:
+   
+   if item not in existing_dict:
+      existing_dict[next_key] = item
+
+'''
