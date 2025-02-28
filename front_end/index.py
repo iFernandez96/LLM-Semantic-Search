@@ -8,7 +8,7 @@ userInputedString = None
 class NL2SQ(QWidget):
     def __init__(self):
         super().__init__()
-        self.setGeometry(100, 100, 100, 100)
+        self.setGeometry(500, 250, 250, 100)
         self.setWindowTitle("Natural Language to Structured Query")
         layout = QVBoxLayout()
 
