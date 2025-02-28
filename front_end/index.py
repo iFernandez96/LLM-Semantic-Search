@@ -32,6 +32,8 @@ class NL2SQ(QWidget):
     def button_clicked(self):
         self.submitLabel.setText("TEXT HAS BEEN SUBMITTED")
         userInputedString = self.textbox.text()
+        with open("userInput.txt", "w") as file:
+            file.write(f"{userInputedString}")
 
 
 my_win = NL2SQ()
