@@ -8,7 +8,7 @@ import time
 
 def getResponseFromLLM(user_query):
     
-    PROMPT = f"You are an AI assistant that translates natural language queries into a structured query format specifically designed for Converged Mixed Reality (CMR) texture data. Do not respond with anything but the expected output.\n\n\
+    CONTEXT = f"You are an AI assistant that translates natural language queries into a structured query format specifically designed for Converged Mixed Reality (CMR) texture data. Do not respond with anything but the expected output.\n\n\
 Schema & Field Mappings:\n\
 - Corrosion Type → F1 (Enumerated) → {{Surface = K1, Galvanic = K2, Pitting = K3, Crevice = K4}}\n\
 - Component Risk Level → F2 (Enumerated) → {{Critical = K1, High = K2, Moderate = K3, Low = K4}}\n\
@@ -37,7 +37,7 @@ Expected Output:"
 
     JSON_PAYLOAD = json.dumps({
         "model": "mistral-nemo",
-        "prompt": PROMPT,
+        "prompt": CONTEXT,
         "options": {
             "temperature": 0,
             "top_p": 1,
