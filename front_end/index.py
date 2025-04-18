@@ -48,19 +48,11 @@ class NL2SQ(QWidget):
         actualFile = user_selected_file[0]
 
         if actualFile:
-            # self.selectFileButton.setText(user_selected_file[0])
-            # try:
             with open("user_selected_file_contents.txt", "w") as standardFile:
                 contents = ""
                 with open(f"{user_selected_file[0]}", "r") as selectedFile:
                     contents = selectedFile.read()
                 standardFile.write(contents)
-            # except:
-            #     excelfile = pandas.read_excel(actualFile, sheet_name=None)
-            #     # print(f"{excelfile.items()}")
-            #     with open("user_selected_file_contents.txt", "w") as standardFile:
-            #         for sheet, data in excelfile.items():
-            #             standardFile.write(f"Sheet: {sheet}\n\n {data.to_csv()}")
 
         print(f"File contents of {actualFile} have been read and move to user_selected_file_contents.txt")
                 

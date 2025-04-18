@@ -4,8 +4,8 @@
 send_query() {
     local user_query="$1"
 
-    killall ollama
-    ollama serve & > /dev/null
+    # killall ollama
+    # ollama serve & > /dev/null
     # Define the prompt with the query inserted dynamically
     PROMPT="You are an AI assistant that translates natural language queries into a structured query format specifically designed for Converged Mixed Reality (CMR) texture data. Do not respond with anything but the expected output.\n\n\
 Schema & Field Mappings:\n\
