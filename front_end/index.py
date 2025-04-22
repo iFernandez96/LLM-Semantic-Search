@@ -1,5 +1,5 @@
 import sys
-import pandas
+import subprocess
 from PyQt6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit, QFileDialog)
 
 application = QApplication([])
@@ -39,6 +39,9 @@ class NL2SQ(QWidget):
         userInputedString = self.textbox.text()
         with open("userInput.txt", "w") as file:
             file.write(f"{userInputedString}")
+        # Currently runs a Test.sh file (this only works if running on wsl, ubuntu, linux)
+        # Change later to work with RunLLM.sh 
+        subprocess.run(["../LLMs/Test.sh"], input=userInputedString, text=True)
 
     def get_file(self):  
         # Include Pandas to convert .xlsx files into .txt files

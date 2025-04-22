@@ -44,7 +44,11 @@ Expected Output:"
          -d "$JSON_PAYLOAD" | jq '.response' >> response.txt 
 }
 
-# Interactive query loop
+read query
+
+send_query "$query"
+
+Interactive query loop
 while true; do
     echo ""
     read -p "Enter a query (or type 'exit' to quit): " query
