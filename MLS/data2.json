@@ -1,0 +1,203 @@
+{
+    "FieldNames": {
+        "0": {
+            "name": "Item Category",
+            "Description": "63 grocery categories or departments",
+            "Examples": [
+                { "Key": 0, "Value": "No value" },
+                { "Key": 1, "Value": "Fresh Fruits" },
+                { "Key": 2, "Value": "Fresh Vegetables" }
+            ]
+        },
+        "1": {
+            "name": "Specific Item Type",
+            "Description": "255 grocery items or specific product types",
+            "Examples": [
+                { "Key": 0, "Value": "No value" },
+                { "Key": 1, "Value": "Apples" },
+                { "Key": 2, "Value": "Bananas" }
+            ]
+        },
+        "2": {
+            "name": "Expiration Tag",
+            "Description": "7 expiration durations",
+            "Examples": [
+                { "Key": 0, "Value": "No value" },
+                { "Key": 1, "Value": "3 days" },
+                { "Key": 2, "Value": "1 week" }
+            ]
+        },
+        "3": {
+            "name": "Discount Code",
+            "Description": "7 discount or promo codes",
+            "Examples": [
+                { "Key": 0, "Value": "No value" },
+                { "Key": 1, "Value": "None" },
+                { "Key": 2, "Value": "10% Off" }
+            ]
+        }
+    },
+    "Fields": [
+      {
+        "Name": "Item Category",
+        "StartBit": 0,
+        "Length": 6,
+        "Description": "63 grocery categories or departments",
+        "Values": [
+          { "Key": 0, "Value": "No value" },
+          { "Key": 1, "Value": "Fresh Fruits" },
+          { "Key": 2, "Value": "Fresh Vegetables" },
+          { "Key": 3, "Value": "Dairy" },
+          { "Key": 4, "Value": "Meat" },
+          { "Key": 5, "Value": "Seafood" },
+          { "Key": 6, "Value": "Bakery" },
+          { "Key": 7, "Value": "Deli" },
+          { "Key": 8, "Value": "Prepared Foods" },
+          { "Key": 9, "Value": "Frozen Foods" },
+          { "Key": 10, "Value": "Canned Goods" },
+          { "Key": 11, "Value": "Pantry Staples" },
+          { "Key": 12, "Value": "Beverages (Non-Alcoholic)" },
+          { "Key": 13, "Value": "Alcoholic Beverages" },
+          { "Key": 14, "Value": "Snacks" },
+          { "Key": 15, "Value": "Candy & Confectionery" },
+          { "Key": 16, "Value": "Breakfast & Cereal" },
+          { "Key": 17, "Value": "Baking Supplies" },
+          { "Key": 18, "Value": "Condiments & Sauces" },
+          { "Key": 19, "Value": "Spices & Seasonings" },
+          { "Key": 20, "Value": "International Foods" },
+          { "Key": 21, "Value": "Organic & Health Foods" },
+          { "Key": 22, "Value": "Personal Care" },
+          { "Key": 23, "Value": "Cleaning Supplies" },
+          { "Key": 24, "Value": "Paper Goods & Disposables" },
+          { "Key": 25, "Value": "Baby Products" },
+          { "Key": 26, "Value": "Pet Supplies" },
+          { "Key": 27, "Value": "Pharmacy (OTC)" },
+          { "Key": 28, "Value": "Floral" },
+          { "Key": 29, "Value": "Electronics & Batteries" },
+          { "Key": 30, "Value": "Stationery & Office Supplies" },
+          { "Key": 31, "Value": "Seasonal Items" },
+          { "Key": 32, "Value": "Miscellaneous" },
+          { "Key": 33, "Value": "Coffee & Tea" },
+          { "Key": 34, "Value": "Magazines & Books" },
+          { "Key": 35, "Value": "Tobacco Products" }
+        ]
+      },
+      {
+        "Name": "Item Type",
+        "StartBit": 6,
+        "Length": 8,
+        "Description": "255 grocery items or product types",
+        "Values": [
+          { "Key": 0, "Value": "No value" },
+          { "Key": 1, "Value": "Apples" },
+          { "Key": 2, "Value": "Bananas" },
+          { "Key": 3, "Value": "Oranges" },
+          { "Key": 4, "Value": "Lettuce" },
+          { "Key": 5, "Value": "Tomatoes" },
+          { "Key": 6, "Value": "Carrots" },
+          { "Key": 7, "Value": "Milk" },
+          { "Key": 8, "Value": "Cheese" },
+          { "Key": 9, "Value": "Yogurt" },
+          { "Key": 10, "Value": "Butter" },
+          { "Key": 11, "Value": "Chicken Breast" },
+          { "Key": 12, "Value": "Ground Beef" },
+          { "Key": 13, "Value": "Salmon Fillet" },
+          { "Key": 14, "Value": "Shrimp" },
+          { "Key": 15, "Value": "Bread" },
+          { "Key": 16, "Value": "Cake" },
+          { "Key": 17, "Value": "Sliced Ham" },
+          { "Key": 18, "Value": "Turkey Breast" },
+          { "Key": 19, "Value": "Rotisserie Chicken" },
+          { "Key": 20, "Value": "Prepared Salad" },
+          { "Key": 21, "Value": "Frozen Pizza" },
+          { "Key": 22, "Value": "Ice Cream" },
+          { "Key": 23, "Value": "Frozen Peas" },
+          { "Key": 24, "Value": "Canned Beans" },
+          { "Key": 25, "Value": "Tomato Sauce (Canned)" },
+          { "Key": 26, "Value": "Spaghetti Pasta" },
+          { "Key": 27, "Value": "Rice" },
+          { "Key": 28, "Value": "Cola Soda" },
+          { "Key": 29, "Value": "Orange Juice" },
+          { "Key": 30, "Value": "Red Wine" },
+          { "Key": 31, "Value": "Beer" },
+          { "Key": 32, "Value": "Potato Chips" },
+          { "Key": 33, "Value": "Pretzels" },
+          { "Key": 34, "Value": "Chocolate Bar" },
+          { "Key": 35, "Value": "Gummy Bears" },
+          { "Key": 36, "Value": "Corn Flakes Cereal" },
+          { "Key": 37, "Value": "Oatmeal" },
+          { "Key": 38, "Value": "All-Purpose Flour" },
+          { "Key": 39, "Value": "White Sugar" },
+          { "Key": 40, "Value": "Ketchup" },
+          { "Key": 41, "Value": "Mayonnaise" },
+          { "Key": 42, "Value": "Black Pepper" },
+          { "Key": 43, "Value": "Cinnamon" },
+          { "Key": 44, "Value": "Salsa" },
+          { "Key": 45, "Value": "Curry Paste" },
+          { "Key": 46, "Value": "Almond Milk" },
+          { "Key": 47, "Value": "Gluten-Free Bread" },
+          { "Key": 48, "Value": "Shampoo" },
+          { "Key": 49, "Value": "Toothpaste" },
+          { "Key": 50, "Value": "Laundry Detergent" },
+          { "Key": 51, "Value": "Dish Soap" },
+          { "Key": 52, "Value": "Toilet Paper" },
+          { "Key": 53, "Value": "Paper Plates" },
+          { "Key": 54, "Value": "Baby Diapers" },
+          { "Key": 55, "Value": "Baby Formula" },
+          { "Key": 56, "Value": "Dog Food" },
+          { "Key": 57, "Value": "Cat Litter" },
+          { "Key": 58, "Value": "Pain Reliever" },
+          { "Key": 59, "Value": "Vitamins" },
+          { "Key": 60, "Value": "Bouquet of Roses" },
+          { "Key": 61, "Value": "Houseplant" },
+          { "Key": 62, "Value": "AA Batteries" },
+          { "Key": 63, "Value": "Light Bulbs" },
+          { "Key": 64, "Value": "Notebook" },
+          { "Key": 65, "Value": "Pens" },
+          { "Key": 66, "Value": "Christmas Decorations" },
+          { "Key": 67, "Value": "Summer Toys" },
+          { "Key": 68, "Value": "Gift Card" },
+          { "Key": 69, "Value": "Lottery Ticket" },
+          { "Key": 70, "Value": "Coffee Beans" },
+          { "Key": 71, "Value": "Green Tea" },
+          { "Key": 72, "Value": "Fashion Magazine" },
+          { "Key": 73, "Value": "Paperback Novel" },
+          { "Key": 74, "Value": "Cigarettes" },
+          { "Key": 75, "Value": "Cigar" }
+        ]
+      },
+      {
+        "Name": "Expiration Tag",
+        "StartBit": 14,
+        "Length": 3,
+        "Description": "7 expiration durations",
+        "Values": [
+          { "Key": 0, "Value": "No value" },
+          { "Key": 1, "Value": "3 days" },
+          { "Key": 2, "Value": "1 week" },
+          { "Key": 3, "Value": "2 weeks" },
+          { "Key": 4, "Value": "1 month" },
+          { "Key": 5, "Value": "3 months" },
+          { "Key": 6, "Value": "6 months" },
+          { "Key": 7, "Value": "1 year" }
+        ]
+      },
+      {
+        "Name": "Discount Code",
+        "StartBit": 17,
+        "Length": 3,
+        "Description": "7 discount or promo codes",
+        "Values": [
+          { "Key": 0, "Value": "No value" },
+          { "Key": 1, "Value": "None" },
+          { "Key": 2, "Value": "10% Off" },
+          { "Key": 3, "Value": "BOGO" },
+          { "Key": 4, "Value": "Manager's Special" },
+          { "Key": 5, "Value": "Clearance" },
+          { "Key": 6, "Value": "Seasonal Sale" },
+          { "Key": 7, "Value": "Loyalty Discount" }
+        ]
+      }
+    ]
+  }
+  
