@@ -1,166 +1,3672 @@
 {
-  "SchemaName": "Grocery Store Inventory",
-  "version": "1.0",
+  "SchemaName": "Combined Panel and Discrepancies",
+  "version": "0.0.0.2",
   "Fields": [
     {
-      "Name": "Item Category",
+      "Name": "Panel Category",
       "StartBit": 0,
-      "Length": 6,
-      "Description": "63 grocery categories or departments",
+      "Length": 11,
+      "Description": "2047 Panel or Unique Locations",
       "Values": [
-        { "Key": 0, "Value": "No value" },
-        { "Key": 1, "Value": "Fresh Fruits" },
-        { "Key": 2, "Value": "Fresh Vegetables" },
-        { "Key": 3, "Value": "Dairy" },
-        { "Key": 4, "Value": "Meat" },
-        { "Key": 5, "Value": "Seafood" },
-        { "Key": 6, "Value": "Bakery" },
-        { "Key": 7, "Value": "Deli" },
-        { "Key": 8, "Value": "Prepared Foods" },
-        { "Key": 9, "Value": "Frozen Foods" },
-        { "Key": 10, "Value": "Canned Goods" },
-        { "Key": 11, "Value": "Pantry Staples" },
-        { "Key": 12, "Value": "Beverages (Non-Alcoholic)" },
-        { "Key": 13, "Value": "Alcoholic Beverages" },
-        { "Key": 14, "Value": "Snacks" },
-        { "Key": 15, "Value": "Candy & Confectionery" },
-        { "Key": 16, "Value": "Breakfast & Cereal" },
-        { "Key": 17, "Value": "Baking Supplies" },
-        { "Key": 18, "Value": "Condiments & Sauces" },
-        { "Key": 19, "Value": "Spices & Seasonings" },
-        { "Key": 20, "Value": "International Foods" },
-        { "Key": 21, "Value": "Organic & Health Foods" },
-        { "Key": 22, "Value": "Personal Care" },
-        { "Key": 23, "Value": "Cleaning Supplies" },
-        { "Key": 24, "Value": "Paper Goods & Disposables" },
-        { "Key": 25, "Value": "Baby Products" },
-        { "Key": 26, "Value": "Pet Supplies" },
-        { "Key": 27, "Value": "Pharmacy (OTC)" },
-        { "Key": 28, "Value": "Floral" },
-        { "Key": 29, "Value": "Electronics & Batteries" },
-        { "Key": 30, "Value": "Stationery & Office Supplies" },
-        { "Key": 31, "Value": "Seasonal Items" },
-        { "Key": 32, "Value": "Miscellaneous" },
-        { "Key": 33, "Value": "Coffee & Tea" },
-        { "Key": 34, "Value": "Magazines & Books" },
-        { "Key": 35, "Value": "Tobacco Products" }
+        {
+          "Key": 0,
+          "Value": "No value"
+        },
+        {
+          "Key": 1,
+          "Value": 1
+        },
+        {
+          "Key": 2,
+          "Value": 2
+        },
+        {
+          "Key": 3,
+          "Value": 3
+        },
+        {
+          "Key": 4,
+          "Value": 4
+        },
+        {
+          "Key": 5,
+          "Value": 6
+        },
+        {
+          "Key": 6,
+          "Value": 8
+        },
+        {
+          "Key": 7,
+          "Value": 9
+        },
+        {
+          "Key": 8,
+          "Value": 16
+        },
+        {
+          "Key": 9,
+          "Value": 18
+        },
+        {
+          "Key": 10,
+          "Value": 23
+        },
+        {
+          "Key": 11,
+          "Value": 24
+        },
+        {
+          "Key": 12,
+          "Value": 26
+        },
+        {
+          "Key": 13,
+          "Value": 27
+        },
+        {
+          "Key": 14,
+          "Value": 33
+        },
+        {
+          "Key": 15,
+          "Value": 36
+        },
+        {
+          "Key": 16,
+          "Value": 38
+        },
+        {
+          "Key": 17,
+          "Value": 39
+        },
+        {
+          "Key": 18,
+          "Value": 40
+        },
+        {
+          "Key": 19,
+          "Value": 42
+        },
+        {
+          "Key": 20,
+          "Value": 43
+        },
+        {
+          "Key": 21,
+          "Value": "45 L"
+        },
+        {
+          "Key": 22,
+          "Value": "46 L"
+        },
+        {
+          "Key": 23,
+          "Value": 47
+        },
+        {
+          "Key": 24,
+          "Value": 49
+        },
+        {
+          "Key": 25,
+          "Value": "51 L"
+        },
+        {
+          "Key": 26,
+          "Value": "52 L"
+        },
+        {
+          "Key": 27,
+          "Value": "54 L"
+        },
+        {
+          "Key": 28,
+          "Value": 56
+        },
+        {
+          "Key": 29,
+          "Value": 57
+        },
+        {
+          "Key": 30,
+          "Value": 61
+        },
+        {
+          "Key": 31,
+          "Value": 62
+        },
+        {
+          "Key": 32,
+          "Value": "64 L"
+        },
+        {
+          "Key": 33,
+          "Value": 65
+        },
+        {
+          "Key": 34,
+          "Value": "68 L"
+        },
+        {
+          "Key": 35,
+          "Value": "69 L"
+        },
+        {
+          "Key": 36,
+          "Value": "77 L"
+        },
+        {
+          "Key": 37,
+          "Value": "78 L"
+        },
+        {
+          "Key": 38,
+          "Value": "79 L"
+        },
+        {
+          "Key": 39,
+          "Value": "82 L"
+        },
+        {
+          "Key": 40,
+          "Value": 83
+        },
+        {
+          "Key": 41,
+          "Value": "84 L"
+        },
+        {
+          "Key": 42,
+          "Value": "85 L"
+        },
+        {
+          "Key": 43,
+          "Value": "89 L"
+        },
+        {
+          "Key": 44,
+          "Value": 91
+        },
+        {
+          "Key": 45,
+          "Value": 96
+        },
+        {
+          "Key": 46,
+          "Value": 101
+        },
+        {
+          "Key": 47,
+          "Value": 103
+        },
+        {
+          "Key": 48,
+          "Value": 104
+        },
+        {
+          "Key": 49,
+          "Value": 105
+        },
+        {
+          "Key": 50,
+          "Value": 107
+        },
+        {
+          "Key": 51,
+          "Value": 108
+        },
+        {
+          "Key": 52,
+          "Value": "120 L"
+        },
+        {
+          "Key": 53,
+          "Value": "121 L"
+        },
+        {
+          "Key": 54,
+          "Value": "124 L"
+        },
+        {
+          "Key": 55,
+          "Value": 125
+        },
+        {
+          "Key": 56,
+          "Value": 131
+        },
+        {
+          "Key": 57,
+          "Value": 132
+        },
+        {
+          "Key": 58,
+          "Value": 133
+        },
+        {
+          "Key": 59,
+          "Value": 134
+        },
+        {
+          "Key": 60,
+          "Value": "136 L"
+        },
+        {
+          "Key": 61,
+          "Value": "137 L"
+        },
+        {
+          "Key": 62,
+          "Value": 140
+        },
+        {
+          "Key": 63,
+          "Value": 160
+        },
+        {
+          "Key": 64,
+          "Value": 164
+        },
+        {
+          "Key": 65,
+          "Value": 165
+        },
+        {
+          "Key": 66,
+          "Value": 199
+        },
+        {
+          "Key": 67,
+          "Value": 200
+        },
+        {
+          "Key": 68,
+          "Value": 210
+        },
+        {
+          "Key": 69,
+          "Value": 211
+        },
+        {
+          "Key": 70,
+          "Value": 215
+        },
+        {
+          "Key": 71,
+          "Value": 216
+        },
+        {
+          "Key": 72,
+          "Value": 217
+        },
+        {
+          "Key": 73,
+          "Value": 226
+        },
+        {
+          "Key": 74,
+          "Value": 227
+        },
+        {
+          "Key": 75,
+          "Value": 228
+        },
+        {
+          "Key": 76,
+          "Value": 229
+        },
+        {
+          "Key": 77,
+          "Value": 230
+        },
+        {
+          "Key": 78,
+          "Value": 249
+        },
+        {
+          "Key": 79,
+          "Value": 250
+        },
+        {
+          "Key": 80,
+          "Value": 251
+        },
+        {
+          "Key": 81,
+          "Value": 252
+        },
+        {
+          "Key": 82,
+          "Value": 253
+        },
+        {
+          "Key": 83,
+          "Value": 280
+        },
+        {
+          "Key": 84,
+          "Value": 283
+        },
+        {
+          "Key": 85,
+          "Value": 284
+        },
+        {
+          "Key": 86,
+          "Value": 287
+        },
+        {
+          "Key": 87,
+          "Value": 288
+        },
+        {
+          "Key": 88,
+          "Value": 289
+        },
+        {
+          "Key": 89,
+          "Value": 290
+        },
+        {
+          "Key": 90,
+          "Value": 299
+        },
+        {
+          "Key": 91,
+          "Value": 300
+        },
+        {
+          "Key": 92,
+          "Value": 301
+        },
+        {
+          "Key": 93,
+          "Value": 302
+        },
+        {
+          "Key": 94,
+          "Value": 306
+        },
+        {
+          "Key": 95,
+          "Value": 309
+        },
+        {
+          "Key": 96,
+          "Value": "310 L"
+        },
+        {
+          "Key": 97,
+          "Value": "311 L"
+        },
+        {
+          "Key": 98,
+          "Value": 312
+        },
+        {
+          "Key": 99,
+          "Value": 315
+        },
+        {
+          "Key": 100,
+          "Value": 316
+        },
+        {
+          "Key": 101,
+          "Value": "317 L"
+        },
+        {
+          "Key": 102,
+          "Value": 321
+        },
+        {
+          "Key": 103,
+          "Value": 322
+        },
+        {
+          "Key": 104,
+          "Value": 324
+        },
+        {
+          "Key": 105,
+          "Value": 331
+        },
+        {
+          "Key": 106,
+          "Value": 332
+        },
+        {
+          "Key": 107,
+          "Value": 333
+        },
+        {
+          "Key": 108,
+          "Value": 380
+        },
+        {
+          "Key": 109,
+          "Value": 381
+        },
+        {
+          "Key": 110,
+          "Value": 382
+        },
+        {
+          "Key": 111,
+          "Value": 383
+        },
+        {
+          "Key": 112,
+          "Value": 384
+        },
+        {
+          "Key": 113,
+          "Value": 385
+        },
+        {
+          "Key": 114,
+          "Value": 386
+        },
+        {
+          "Key": 115,
+          "Value": 387
+        },
+        {
+          "Key": 116,
+          "Value": "390 L"
+        },
+        {
+          "Key": 117,
+          "Value": 391
+        },
+        {
+          "Key": 118,
+          "Value": 392
+        },
+        {
+          "Key": 119,
+          "Value": "393 L"
+        },
+        {
+          "Key": 120,
+          "Value": 418
+        },
+        {
+          "Key": 121,
+          "Value": 419
+        },
+        {
+          "Key": 122,
+          "Value": 420
+        },
+        {
+          "Key": 123,
+          "Value": 507
+        },
+        {
+          "Key": 124,
+          "Value": 508
+        },
+        {
+          "Key": 125,
+          "Value": 509
+        },
+        {
+          "Key": 126,
+          "Value": 510
+        },
+        {
+          "Key": 127,
+          "Value": 600
+        },
+        {
+          "Key": 128,
+          "Value": 604
+        },
+        {
+          "Key": 129,
+          "Value": 605
+        },
+        {
+          "Key": 130,
+          "Value": 613
+        },
+        {
+          "Key": 131,
+          "Value": 614
+        },
+        {
+          "Key": 132,
+          "Value": 615
+        },
+        {
+          "Key": 133,
+          "Value": 617
+        },
+        {
+          "Key": 134,
+          "Value": 621
+        },
+        {
+          "Key": 135,
+          "Value": 622
+        },
+        {
+          "Key": 136,
+          "Value": 623
+        },
+        {
+          "Key": 137,
+          "Value": 626
+        },
+        {
+          "Key": 138,
+          "Value": 630
+        },
+        {
+          "Key": 139,
+          "Value": 680
+        },
+        {
+          "Key": 140,
+          "Value": "10 L"
+        },
+        {
+          "Key": 141,
+          "Value": "10 R"
+        },
+        {
+          "Key": 142,
+          "Value": "100 L"
+        },
+        {
+          "Key": 143,
+          "Value": "100 R"
+        },
+        {
+          "Key": 144,
+          "Value": "109 L"
+        },
+        {
+          "Key": 145,
+          "Value": "109 R"
+        },
+        {
+          "Key": 146,
+          "Value": "11 L"
+        },
+        {
+          "Key": 147,
+          "Value": "11 R"
+        },
+        {
+          "Key": 148,
+          "Value": "13 L"
+        },
+        {
+          "Key": 149,
+          "Value": "13 R"
+        },
+        {
+          "Key": 150,
+          "Value": "130 L"
+        },
+        {
+          "Key": 151,
+          "Value": "130 R"
+        },
+        {
+          "Key": 152,
+          "Value": "14 L"
+        },
+        {
+          "Key": 153,
+          "Value": "14 R"
+        },
+        {
+          "Key": 154,
+          "Value": "159 L"
+        },
+        {
+          "Key": 155,
+          "Value": "159 R"
+        },
+        {
+          "Key": 156,
+          "Value": "17 L"
+        },
+        {
+          "Key": 157,
+          "Value": "17 R"
+        },
+        {
+          "Key": 158,
+          "Value": "203 L"
+        },
+        {
+          "Key": 159,
+          "Value": "203 R"
+        },
+        {
+          "Key": 160,
+          "Value": "204 L"
+        },
+        {
+          "Key": 161,
+          "Value": "204 R"
+        },
+        {
+          "Key": 162,
+          "Value": "205 L"
+        },
+        {
+          "Key": 163,
+          "Value": "205 R"
+        },
+        {
+          "Key": 164,
+          "Value": "22 L"
+        },
+        {
+          "Key": 165,
+          "Value": "22 R"
+        },
+        {
+          "Key": 166,
+          "Value": "25 L"
+        },
+        {
+          "Key": 167,
+          "Value": "25 R"
+        },
+        {
+          "Key": 168,
+          "Value": "307 L"
+        },
+        {
+          "Key": 169,
+          "Value": "307 R"
+        },
+        {
+          "Key": 170,
+          "Value": "32 L"
+        },
+        {
+          "Key": 171,
+          "Value": "32 R"
+        },
+        {
+          "Key": 172,
+          "Value": "323 L"
+        },
+        {
+          "Key": 173,
+          "Value": "323 R"
+        },
+        {
+          "Key": 174,
+          "Value": "34 L"
+        },
+        {
+          "Key": 175,
+          "Value": "34 R"
+        },
+        {
+          "Key": 176,
+          "Value": "35 L"
+        },
+        {
+          "Key": 177,
+          "Value": "35 R"
+        },
+        {
+          "Key": 178,
+          "Value": "37 L"
+        },
+        {
+          "Key": 179,
+          "Value": "37 R"
+        },
+        {
+          "Key": 180,
+          "Value": "400 L"
+        },
+        {
+          "Key": 181,
+          "Value": "400 R"
+        },
+        {
+          "Key": 182,
+          "Value": "401 L"
+        },
+        {
+          "Key": 183,
+          "Value": "401 R"
+        },
+        {
+          "Key": 184,
+          "Value": "402 L"
+        },
+        {
+          "Key": 185,
+          "Value": "402 R"
+        },
+        {
+          "Key": 186,
+          "Value": "403 L"
+        },
+        {
+          "Key": 187,
+          "Value": "403 R"
+        },
+        {
+          "Key": 188,
+          "Value": "404 L"
+        },
+        {
+          "Key": 189,
+          "Value": "405 L"
+        },
+        {
+          "Key": 190,
+          "Value": "405 R"
+        },
+        {
+          "Key": 191,
+          "Value": "406 L"
+        },
+        {
+          "Key": 192,
+          "Value": "406 R"
+        },
+        {
+          "Key": 193,
+          "Value": "407 L"
+        },
+        {
+          "Key": 194,
+          "Value": "407 R"
+        },
+        {
+          "Key": 195,
+          "Value": "408 L"
+        },
+        {
+          "Key": 196,
+          "Value": "408 R"
+        },
+        {
+          "Key": 197,
+          "Value": "409 L"
+        },
+        {
+          "Key": 198,
+          "Value": "409 R"
+        },
+        {
+          "Key": 199,
+          "Value": "41 L"
+        },
+        {
+          "Key": 200,
+          "Value": "41 R"
+        },
+        {
+          "Key": 201,
+          "Value": "410 L"
+        },
+        {
+          "Key": 202,
+          "Value": "410 R"
+        },
+        {
+          "Key": 203,
+          "Value": "411 L"
+        },
+        {
+          "Key": 204,
+          "Value": "411 R"
+        },
+        {
+          "Key": 205,
+          "Value": "412 L"
+        },
+        {
+          "Key": 206,
+          "Value": "412 R"
+        },
+        {
+          "Key": 207,
+          "Value": "413 L"
+        },
+        {
+          "Key": 208,
+          "Value": "413 R"
+        },
+        {
+          "Key": 209,
+          "Value": "414 L"
+        },
+        {
+          "Key": 210,
+          "Value": "414 R"
+        },
+        {
+          "Key": 211,
+          "Value": "421 L"
+        },
+        {
+          "Key": 212,
+          "Value": "421 R"
+        },
+        {
+          "Key": 213,
+          "Value": "422 L"
+        },
+        {
+          "Key": 214,
+          "Value": "422 R"
+        },
+        {
+          "Key": 215,
+          "Value": "423 L"
+        },
+        {
+          "Key": 216,
+          "Value": "423 R"
+        },
+        {
+          "Key": 217,
+          "Value": "424 L"
+        },
+        {
+          "Key": 218,
+          "Value": "424 R"
+        },
+        {
+          "Key": 219,
+          "Value": "425 L"
+        },
+        {
+          "Key": 220,
+          "Value": "425 R"
+        },
+        {
+          "Key": 221,
+          "Value": "426 L"
+        },
+        {
+          "Key": 222,
+          "Value": "426 R"
+        },
+        {
+          "Key": 223,
+          "Value": "427 L"
+        },
+        {
+          "Key": 224,
+          "Value": "427 R"
+        },
+        {
+          "Key": 225,
+          "Value": "433.1 L"
+        },
+        {
+          "Key": 226,
+          "Value": "433.1 R"
+        },
+        {
+          "Key": 227,
+          "Value": "433.2 L"
+        },
+        {
+          "Key": 228,
+          "Value": "433.2 R"
+        },
+        {
+          "Key": 229,
+          "Value": "433.3 L"
+        },
+        {
+          "Key": 230,
+          "Value": "433.3 R"
+        },
+        {
+          "Key": 231,
+          "Value": "433.4 L"
+        },
+        {
+          "Key": 232,
+          "Value": "433.4 R"
+        },
+        {
+          "Key": 233,
+          "Value": "433.5 L"
+        },
+        {
+          "Key": 234,
+          "Value": "433.5 R"
+        },
+        {
+          "Key": 235,
+          "Value": "433.6 L"
+        },
+        {
+          "Key": 236,
+          "Value": "433.6 R"
+        },
+        {
+          "Key": 237,
+          "Value": "433.7 L"
+        },
+        {
+          "Key": 238,
+          "Value": "433.7 R"
+        },
+        {
+          "Key": 239,
+          "Value": "44 L"
+        },
+        {
+          "Key": 240,
+          "Value": "44 R"
+        },
+        {
+          "Key": 241,
+          "Value": "443.1 L"
+        },
+        {
+          "Key": 242,
+          "Value": "443.1 R"
+        },
+        {
+          "Key": 243,
+          "Value": "443.2 L"
+        },
+        {
+          "Key": 244,
+          "Value": "443.2 R"
+        },
+        {
+          "Key": 245,
+          "Value": "443.3 L"
+        },
+        {
+          "Key": 246,
+          "Value": "443.3 R"
+        },
+        {
+          "Key": 247,
+          "Value": "443.4 L"
+        },
+        {
+          "Key": 248,
+          "Value": "443.4 R"
+        },
+        {
+          "Key": 249,
+          "Value": "452 L"
+        },
+        {
+          "Key": 250,
+          "Value": "452 R"
+        },
+        {
+          "Key": 251,
+          "Value": "460 L"
+        },
+        {
+          "Key": 252,
+          "Value": "460 R"
+        },
+        {
+          "Key": 253,
+          "Value": "461 L"
+        },
+        {
+          "Key": 254,
+          "Value": "461 R"
+        },
+        {
+          "Key": 255,
+          "Value": "462 L"
+        },
+        {
+          "Key": 256,
+          "Value": "462 R"
+        },
+        {
+          "Key": 257,
+          "Value": "463 L"
+        },
+        {
+          "Key": 258,
+          "Value": "463 R"
+        },
+        {
+          "Key": 259,
+          "Value": "465 L"
+        },
+        {
+          "Key": 260,
+          "Value": "465 R"
+        },
+        {
+          "Key": 261,
+          "Value": "466 L"
+        },
+        {
+          "Key": 262,
+          "Value": "466 R"
+        },
+        {
+          "Key": 263,
+          "Value": "467 L"
+        },
+        {
+          "Key": 264,
+          "Value": "467 R"
+        },
+        {
+          "Key": 265,
+          "Value": "469 L"
+        },
+        {
+          "Key": 266,
+          "Value": "469 R"
+        },
+        {
+          "Key": 267,
+          "Value": "471 L"
+        },
+        {
+          "Key": 268,
+          "Value": "471 R"
+        },
+        {
+          "Key": 269,
+          "Value": "472 L"
+        },
+        {
+          "Key": 270,
+          "Value": "472 R"
+        },
+        {
+          "Key": 271,
+          "Value": "473 L"
+        },
+        {
+          "Key": 272,
+          "Value": "473 R"
+        },
+        {
+          "Key": 273,
+          "Value": "474 L"
+        },
+        {
+          "Key": 274,
+          "Value": "474 R"
+        },
+        {
+          "Key": 275,
+          "Value": "475 L"
+        },
+        {
+          "Key": 276,
+          "Value": "475 R"
+        },
+        {
+          "Key": 277,
+          "Value": "476 L"
+        },
+        {
+          "Key": 278,
+          "Value": "476 R"
+        },
+        {
+          "Key": 279,
+          "Value": "477 L"
+        },
+        {
+          "Key": 280,
+          "Value": "477 R"
+        },
+        {
+          "Key": 281,
+          "Value": "48 L"
+        },
+        {
+          "Key": 282,
+          "Value": "48 R"
+        },
+        {
+          "Key": 283,
+          "Value": "480 L"
+        },
+        {
+          "Key": 284,
+          "Value": "480 R"
+        },
+        {
+          "Key": 285,
+          "Value": "481 L"
+        },
+        {
+          "Key": 286,
+          "Value": "481 R"
+        },
+        {
+          "Key": 287,
+          "Value": "482 L"
+        },
+        {
+          "Key": 288,
+          "Value": "482 R"
+        },
+        {
+          "Key": 289,
+          "Value": "483 L"
+        },
+        {
+          "Key": 290,
+          "Value": "483 R"
+        },
+        {
+          "Key": 291,
+          "Value": "484 L"
+        },
+        {
+          "Key": 292,
+          "Value": "484 R"
+        },
+        {
+          "Key": 293,
+          "Value": "485 L"
+        },
+        {
+          "Key": 294,
+          "Value": "485 R"
+        },
+        {
+          "Key": 295,
+          "Value": "486 L"
+        },
+        {
+          "Key": 296,
+          "Value": "486 R"
+        },
+        {
+          "Key": 297,
+          "Value": "490 L"
+        },
+        {
+          "Key": 298,
+          "Value": "490 R"
+        },
+        {
+          "Key": 299,
+          "Value": "491 L"
+        },
+        {
+          "Key": 300,
+          "Value": "491 R"
+        },
+        {
+          "Key": 301,
+          "Value": "492 L"
+        },
+        {
+          "Key": 302,
+          "Value": "492 R"
+        },
+        {
+          "Key": 303,
+          "Value": "493 L"
+        },
+        {
+          "Key": 304,
+          "Value": "493 R"
+        },
+        {
+          "Key": 305,
+          "Value": "496 L"
+        },
+        {
+          "Key": 306,
+          "Value": "496 R"
+        },
+        {
+          "Key": 307,
+          "Value": "497 L"
+        },
+        {
+          "Key": 308,
+          "Value": "497 R"
+        },
+        {
+          "Key": 309,
+          "Value": "498 L"
+        },
+        {
+          "Key": 310,
+          "Value": "498 R"
+        },
+        {
+          "Key": 311,
+          "Value": "50 L"
+        },
+        {
+          "Key": 312,
+          "Value": "50 R"
+        },
+        {
+          "Key": 313,
+          "Value": "53 L"
+        },
+        {
+          "Key": 314,
+          "Value": "53 R"
+        },
+        {
+          "Key": 315,
+          "Value": "55 L"
+        },
+        {
+          "Key": 316,
+          "Value": "55 R"
+        },
+        {
+          "Key": 317,
+          "Value": "61 R"
+        },
+        {
+          "Key": 318,
+          "Value": "610 L"
+        },
+        {
+          "Key": 319,
+          "Value": "610 R"
+        },
+        {
+          "Key": 320,
+          "Value": "611 L"
+        },
+        {
+          "Key": 321,
+          "Value": "611 R"
+        },
+        {
+          "Key": 322,
+          "Value": "63 L"
+        },
+        {
+          "Key": 323,
+          "Value": "63 R"
+        },
+        {
+          "Key": 324,
+          "Value": "66 L"
+        },
+        {
+          "Key": 325,
+          "Value": "66 R"
+        },
+        {
+          "Key": 326,
+          "Value": "7 L"
+        },
+        {
+          "Key": 327,
+          "Value": "7 R"
+        },
+        {
+          "Key": 328,
+          "Value": "70 L"
+        },
+        {
+          "Key": 329,
+          "Value": "70 R"
+        },
+        {
+          "Key": 330,
+          "Value": "71 L"
+        },
+        {
+          "Key": 331,
+          "Value": "71 R"
+        },
+        {
+          "Key": 332,
+          "Value": "72 L"
+        },
+        {
+          "Key": 333,
+          "Value": "72 R"
+        },
+        {
+          "Key": 334,
+          "Value": "73 L"
+        },
+        {
+          "Key": 335,
+          "Value": "73 R"
+        },
+        {
+          "Key": 336,
+          "Value": "74A231807"
+        },
+        {
+          "Key": 337,
+          "Value": "74A600400 OUTBOARD WING"
+        },
+        {
+          "Key": 338,
+          "Value": "74A600437 HORIZONTAL TAIL"
+        },
+        {
+          "Key": 339,
+          "Value": "74A600438 WING LEADING EDGE"
+        },
+        {
+          "Key": 340,
+          "Value": "74A600439 WING TRAILING"
+        },
+        {
+          "Key": 341,
+          "Value": "74A600440 OUTBOARD WING"
+        },
+        {
+          "Key": 342,
+          "Value": "74A600441 FORWARD INBOARD WING L"
+        },
+        {
+          "Key": 343,
+          "Value": "74A600442 AFT INBOARD WING"
+        },
+        {
+          "Key": 344,
+          "Value": "74A600443 WING TO FUSELAGE DRY BAY INTERFACE"
+        },
+        {
+          "Key": 345,
+          "Value": "74A600445 HORIZONTAL TAIL INTERFACE"
+        },
+        {
+          "Key": 346,
+          "Value": "AGM-88"
+        },
+        {
+          "Key": 347,
+          "Value": "ALQ-218 Wing Tip Pod"
+        },
+        {
+          "Key": 348,
+          "Value": "ALQ-99 Pod"
+        },
+        {
+          "Key": 349,
+          "Value": "CPA5"
+        },
+        {
+          "Key": 350,
+          "Value": "CPA6"
+        },
+        {
+          "Key": 351,
+          "Value": "Drop Tank 480 Gallon"
+        },
+        {
+          "Key": 352,
+          "Value": "EBA/EBC"
+        },
+        {
+          "Key": 353,
+          "Value": "EBB"
+        },
+        {
+          "Key": 354,
+          "Value": "EBD"
+        },
+        {
+          "Key": 355,
+          "Value": "EBE"
+        },
+        {
+          "Key": 356,
+          "Value": "EBF"
+        },
+        {
+          "Key": 357,
+          "Value": "EBG"
+        },
+        {
+          "Key": 358,
+          "Value": "EBH"
+        },
+        {
+          "Key": 359,
+          "Value": "EBI"
+        },
+        {
+          "Key": 360,
+          "Value": "EBJ"
+        },
+        {
+          "Key": 361,
+          "Value": "EBK"
+        },
+        {
+          "Key": 362,
+          "Value": "EBL"
+        },
+        {
+          "Key": 363,
+          "Value": "EBM_"
+        },
+        {
+          "Key": 364,
+          "Value": "LAU-118"
+        },
+        {
+          "Key": 365,
+          "Value": "Pylon SUU-79"
+        },
+        {
+          "Key": 366,
+          "Value": "Pylon SUU-80"
+        },
+        {
+          "Key": 367,
+          "Value": "S1"
+        },
+        {
+          "Key": 368,
+          "Value": "S10"
+        },
+        {
+          "Key": 369,
+          "Value": "S11"
+        },
+        {
+          "Key": 370,
+          "Value": "S12"
+        },
+        {
+          "Key": 371,
+          "Value": "S13"
+        },
+        {
+          "Key": 372,
+          "Value": "S14"
+        },
+        {
+          "Key": 373,
+          "Value": "S15 L"
+        },
+        {
+          "Key": 374,
+          "Value": "S15 R"
+        },
+        {
+          "Key": 375,
+          "Value": "S16"
+        },
+        {
+          "Key": 376,
+          "Value": "S17"
+        },
+        {
+          "Key": 377,
+          "Value": "S18"
+        },
+        {
+          "Key": 378,
+          "Value": "S19"
+        },
+        {
+          "Key": 379,
+          "Value": "S2"
+        },
+        {
+          "Key": 380,
+          "Value": "S20"
+        },
+        {
+          "Key": 381,
+          "Value": "S21"
+        },
+        {
+          "Key": 382,
+          "Value": "S22"
+        },
+        {
+          "Key": 383,
+          "Value": "S23"
+        },
+        {
+          "Key": 384,
+          "Value": "S24"
+        },
+        {
+          "Key": 385,
+          "Value": "S25"
+        },
+        {
+          "Key": 386,
+          "Value": "S26"
+        },
+        {
+          "Key": 387,
+          "Value": "S27"
+        },
+        {
+          "Key": 388,
+          "Value": "S28"
+        },
+        {
+          "Key": 389,
+          "Value": "S29"
+        },
+        {
+          "Key": 390,
+          "Value": "S3"
+        },
+        {
+          "Key": 391,
+          "Value": "S30"
+        },
+        {
+          "Key": 392,
+          "Value": "S31"
+        },
+        {
+          "Key": 393,
+          "Value": "S32"
+        },
+        {
+          "Key": 394,
+          "Value": "S33"
+        },
+        {
+          "Key": 395,
+          "Value": "S34 L"
+        },
+        {
+          "Key": 396,
+          "Value": "S35"
+        },
+        {
+          "Key": 397,
+          "Value": "S36 L"
+        },
+        {
+          "Key": 398,
+          "Value": "S37 L"
+        },
+        {
+          "Key": 399,
+          "Value": "S38"
+        },
+        {
+          "Key": 400,
+          "Value": "S39"
+        },
+        {
+          "Key": 401,
+          "Value": "S4 L"
+        },
+        {
+          "Key": 402,
+          "Value": "S40"
+        },
+        {
+          "Key": 403,
+          "Value": "S41"
+        },
+        {
+          "Key": 404,
+          "Value": "S43"
+        },
+        {
+          "Key": 405,
+          "Value": "S44"
+        },
+        {
+          "Key": 406,
+          "Value": "S45"
+        },
+        {
+          "Key": 407,
+          "Value": "S47"
+        },
+        {
+          "Key": 408,
+          "Value": "S48"
+        },
+        {
+          "Key": 409,
+          "Value": "S49"
+        },
+        {
+          "Key": 410,
+          "Value": "S5"
+        },
+        {
+          "Key": 411,
+          "Value": "S50"
+        },
+        {
+          "Key": 412,
+          "Value": "S51"
+        },
+        {
+          "Key": 413,
+          "Value": "S52"
+        },
+        {
+          "Key": 414,
+          "Value": "S53"
+        },
+        {
+          "Key": 415,
+          "Value": "S54"
+        },
+        {
+          "Key": 416,
+          "Value": "S55"
+        },
+        {
+          "Key": 417,
+          "Value": "S56"
+        },
+        {
+          "Key": 418,
+          "Value": "S57"
+        },
+        {
+          "Key": 419,
+          "Value": "S58"
+        },
+        {
+          "Key": 420,
+          "Value": "S59"
+        },
+        {
+          "Key": 421,
+          "Value": "S6"
+        },
+        {
+          "Key": 422,
+          "Value": "S60"
+        },
+        {
+          "Key": 423,
+          "Value": "S61"
+        },
+        {
+          "Key": 424,
+          "Value": "S62"
+        },
+        {
+          "Key": 425,
+          "Value": "S63"
+        },
+        {
+          "Key": 426,
+          "Value": "S64"
+        },
+        {
+          "Key": 427,
+          "Value": "S65"
+        },
+        {
+          "Key": 428,
+          "Value": "S66"
+        },
+        {
+          "Key": 429,
+          "Value": "S7"
+        },
+        {
+          "Key": 430,
+          "Value": "S8"
+        },
+        {
+          "Key": 431,
+          "Value": "S9"
+        },
+        {
+          "Key": 432,
+          "Value": "124 R"
+        },
+        {
+          "Key": 433,
+          "Value": "90 L"
+        },
+        {
+          "Key": 434,
+          "Value": "91 L"
+        },
+        {
+          "Key": 435,
+          "Value": "92 L"
+        },
+        {
+          "Key": 436,
+          "Value": "90 R"
+        },
+        {
+          "Key": 437,
+          "Value": "91 R"
+        },
+        {
+          "Key": 438,
+          "Value": "92 R"
+        },
+        {
+          "Key": 439,
+          "Value": "78 R"
+        },
+        {
+          "Key": 440,
+          "Value": "79 R"
+        },
+        {
+          "Key": 441,
+          "Value": "89 R"
+        },
+        {
+          "Key": 442,
+          "Value": "124 R"
+        },
+        {
+          "Key": 443,
+          "Value": "393 R"
+        },
+        {
+          "Key": 444,
+          "Value": "118 R"
+        },
+        {
+          "Key": 445,
+          "Value": "S36 R"
+        },
+        {
+          "Key": 446,
+          "Value": "S34 R"
+        },
+        {
+          "Key": 447,
+          "Value": "390 R"
+        },
+        {
+          "Key": 448,
+          "Value": "74A600441 FORWARD INBOARD WING R"
+        },
+        {
+          "Key": 449,
+          "Value": "77 R"
+        },
+        {
+          "Key": 450,
+          "Value": "82 R"
+        },
+        {
+          "Key": 451,
+          "Value": "S37 R"
+        },
+        {
+          "Key": 452,
+          "Value": "S4 R"
+        },
+        {
+          "Key": 453,
+          "Value": "85 R"
+        },
+        {
+          "Key": 454,
+          "Value": "84 R"
+        },
+        {
+          "Key": 455,
+          "Value": "310 R"
+        },
+        {
+          "Key": 456,
+          "Value": "64 R"
+        },
+        {
+          "Key": 457,
+          "Value": "68 R"
+        },
+        {
+          "Key": 458,
+          "Value": "45 R"
+        },
+        {
+          "Key": 459,
+          "Value": "46 R"
+        },
+        {
+          "Key": 460,
+          "Value": "120 R"
+        },
+        {
+          "Key": 461,
+          "Value": "121 R"
+        },
+        {
+          "Key": 462,
+          "Value": "311 R"
+        },
+        {
+          "Key": 463,
+          "Value": "317 R"
+        },
+        {
+          "Key": 464,
+          "Value": "136 R"
+        },
+        {
+          "Key": 465,
+          "Value": "137 R"
+        },
+        {
+          "Key": 466,
+          "Value": "621 R"
+        },
+        {
+          "Key": 467,
+          "Value": "622 R"
+        },
+        {
+          "Key": 468,
+          "Value": "623 R"
+        },
+        {
+          "Key": 469,
+          "Value": "51 R"
+        },
+        {
+          "Key": 470,
+          "Value": "52 R"
+        },
+        {
+          "Key": 471,
+          "Value": "53 L"
+        },
+        {
+          "Key": 472,
+          "Value": "53 R"
+        },
+        {
+          "Key": 473,
+          "Value": "54 R"
+        },
+        {
+          "Key": 474,
+          "Value": "69 R"
+        }
       ]
     },
     {
-      "Name": "Item Type",
-      "StartBit": 6,
+      "Name": "Fastner Number",
+      "StartBit": 11,
       "Length": 8,
-      "Description": "255 grocery items or product types",
+      "Description": "255 Fastner locations",
       "Values": [
-        { "Key": 0, "Value": "No value" },
-        { "Key": 1, "Value": "Apples" },
-        { "Key": 2, "Value": "Bananas" },
-        { "Key": 3, "Value": "Oranges" },
-        { "Key": 4, "Value": "Lettuce" },
-        { "Key": 5, "Value": "Tomatoes" },
-        { "Key": 6, "Value": "Carrots" },
-        { "Key": 7, "Value": "Milk" },
-        { "Key": 8, "Value": "Cheese" },
-        { "Key": 9, "Value": "Yogurt" },
-        { "Key": 10, "Value": "Butter" },
-        { "Key": 11, "Value": "Chicken Breast" },
-        { "Key": 12, "Value": "Ground Beef" },
-        { "Key": 13, "Value": "Salmon Fillet" },
-        { "Key": 14, "Value": "Shrimp" },
-        { "Key": 15, "Value": "Bread" },
-        { "Key": 16, "Value": "Cake" },
-        { "Key": 17, "Value": "Sliced Ham" },
-        { "Key": 18, "Value": "Turkey Breast" },
-        { "Key": 19, "Value": "Rotisserie Chicken" },
-        { "Key": 20, "Value": "Prepared Salad" },
-        { "Key": 21, "Value": "Frozen Pizza" },
-        { "Key": 22, "Value": "Ice Cream" },
-        { "Key": 23, "Value": "Frozen Peas" },
-        { "Key": 24, "Value": "Canned Beans" },
-        { "Key": 25, "Value": "Tomato Sauce (Canned)" },
-        { "Key": 26, "Value": "Spaghetti Pasta" },
-        { "Key": 27, "Value": "Rice" },
-        { "Key": 28, "Value": "Cola Soda" },
-        { "Key": 29, "Value": "Orange Juice" },
-        { "Key": 30, "Value": "Red Wine" },
-        { "Key": 31, "Value": "Beer" },
-        { "Key": 32, "Value": "Potato Chips" },
-        { "Key": 33, "Value": "Pretzels" },
-        { "Key": 34, "Value": "Chocolate Bar" },
-        { "Key": 35, "Value": "Gummy Bears" },
-        { "Key": 36, "Value": "Corn Flakes Cereal" },
-        { "Key": 37, "Value": "Oatmeal" },
-        { "Key": 38, "Value": "All-Purpose Flour" },
-        { "Key": 39, "Value": "White Sugar" },
-        { "Key": 40, "Value": "Ketchup" },
-        { "Key": 41, "Value": "Mayonnaise" },
-        { "Key": 42, "Value": "Black Pepper" },
-        { "Key": 43, "Value": "Cinnamon" },
-        { "Key": 44, "Value": "Salsa" },
-        { "Key": 45, "Value": "Curry Paste" },
-        { "Key": 46, "Value": "Almond Milk" },
-        { "Key": 47, "Value": "Gluten-Free Bread" },
-        { "Key": 48, "Value": "Shampoo" },
-        { "Key": 49, "Value": "Toothpaste" },
-        { "Key": 50, "Value": "Laundry Detergent" },
-        { "Key": 51, "Value": "Dish Soap" },
-        { "Key": 52, "Value": "Toilet Paper" },
-        { "Key": 53, "Value": "Paper Plates" },
-        { "Key": 54, "Value": "Baby Diapers" },
-        { "Key": 55, "Value": "Baby Formula" },
-        { "Key": 56, "Value": "Dog Food" },
-        { "Key": 57, "Value": "Cat Litter" },
-        { "Key": 58, "Value": "Pain Reliever" },
-        { "Key": 59, "Value": "Vitamins" },
-        { "Key": 60, "Value": "Bouquet of Roses" },
-        { "Key": 61, "Value": "Houseplant" },
-        { "Key": 62, "Value": "AA Batteries" },
-        { "Key": 63, "Value": "Light Bulbs" },
-        { "Key": 64, "Value": "Notebook" },
-        { "Key": 65, "Value": "Pens" },
-        { "Key": 66, "Value": "Christmas Decorations" },
-        { "Key": 67, "Value": "Summer Toys" },
-        { "Key": 68, "Value": "Gift Card" },
-        { "Key": 69, "Value": "Lottery Ticket" },
-        { "Key": 70, "Value": "Coffee Beans" },
-        { "Key": 71, "Value": "Green Tea" },
-        { "Key": 72, "Value": "Fashion Magazine" },
-        { "Key": 73, "Value": "Paperback Novel" },
-        { "Key": 74, "Value": "Cigarettes" },
-        { "Key": 75, "Value": "Cigar" }
+        {
+          "Key": 0,
+          "Value": "No value"
+        },
+        {
+          "Key": 1,
+          "Value": 1
+        },
+        {
+          "Key": 2,
+          "Value": 2
+        },
+        {
+          "Key": 3,
+          "Value": 3
+        },
+        {
+          "Key": 4,
+          "Value": 4
+        },
+        {
+          "Key": 5,
+          "Value": 5
+        },
+        {
+          "Key": 6,
+          "Value": 6
+        },
+        {
+          "Key": 7,
+          "Value": 7
+        },
+        {
+          "Key": 8,
+          "Value": 8
+        },
+        {
+          "Key": 9,
+          "Value": 9
+        },
+        {
+          "Key": 10,
+          "Value": 10
+        },
+        {
+          "Key": 11,
+          "Value": 11
+        },
+        {
+          "Key": 12,
+          "Value": 12
+        },
+        {
+          "Key": 13,
+          "Value": 13
+        },
+        {
+          "Key": 14,
+          "Value": 14
+        },
+        {
+          "Key": 15,
+          "Value": 15
+        },
+        {
+          "Key": 16,
+          "Value": 16
+        },
+        {
+          "Key": 17,
+          "Value": 17
+        },
+        {
+          "Key": 18,
+          "Value": 18
+        },
+        {
+          "Key": 19,
+          "Value": 19
+        },
+        {
+          "Key": 20,
+          "Value": 20
+        },
+        {
+          "Key": 21,
+          "Value": 21
+        },
+        {
+          "Key": 22,
+          "Value": 22
+        },
+        {
+          "Key": 23,
+          "Value": 23
+        },
+        {
+          "Key": 24,
+          "Value": 24
+        },
+        {
+          "Key": 25,
+          "Value": 25
+        },
+        {
+          "Key": 26,
+          "Value": 26
+        },
+        {
+          "Key": 27,
+          "Value": 27
+        },
+        {
+          "Key": 28,
+          "Value": 28
+        },
+        {
+          "Key": 29,
+          "Value": 29
+        },
+        {
+          "Key": 30,
+          "Value": 30
+        },
+        {
+          "Key": 31,
+          "Value": 31
+        },
+        {
+          "Key": 32,
+          "Value": 32
+        },
+        {
+          "Key": 33,
+          "Value": 33
+        },
+        {
+          "Key": 34,
+          "Value": 34
+        },
+        {
+          "Key": 35,
+          "Value": 35
+        },
+        {
+          "Key": 36,
+          "Value": 36
+        },
+        {
+          "Key": 37,
+          "Value": 37
+        },
+        {
+          "Key": 38,
+          "Value": 38
+        },
+        {
+          "Key": 39,
+          "Value": 39
+        },
+        {
+          "Key": 40,
+          "Value": 40
+        },
+        {
+          "Key": 41,
+          "Value": 41
+        },
+        {
+          "Key": 42,
+          "Value": 42
+        },
+        {
+          "Key": 43,
+          "Value": 43
+        },
+        {
+          "Key": 44,
+          "Value": 44
+        },
+        {
+          "Key": 45,
+          "Value": 45
+        },
+        {
+          "Key": 46,
+          "Value": 46
+        },
+        {
+          "Key": 47,
+          "Value": 47
+        },
+        {
+          "Key": 48,
+          "Value": 48
+        },
+        {
+          "Key": 49,
+          "Value": 49
+        },
+        {
+          "Key": 50,
+          "Value": 50
+        },
+        {
+          "Key": 51,
+          "Value": 51
+        },
+        {
+          "Key": 52,
+          "Value": 52
+        },
+        {
+          "Key": 53,
+          "Value": 53
+        },
+        {
+          "Key": 54,
+          "Value": 54
+        },
+        {
+          "Key": 55,
+          "Value": 55
+        },
+        {
+          "Key": 56,
+          "Value": 56
+        },
+        {
+          "Key": 57,
+          "Value": 57
+        },
+        {
+          "Key": 58,
+          "Value": 58
+        },
+        {
+          "Key": 59,
+          "Value": 59
+        },
+        {
+          "Key": 60,
+          "Value": 60
+        },
+        {
+          "Key": 61,
+          "Value": 61
+        },
+        {
+          "Key": 62,
+          "Value": 62
+        },
+        {
+          "Key": 63,
+          "Value": 63
+        },
+        {
+          "Key": 64,
+          "Value": 64
+        },
+        {
+          "Key": 65,
+          "Value": 65
+        },
+        {
+          "Key": 66,
+          "Value": 66
+        },
+        {
+          "Key": 67,
+          "Value": 67
+        },
+        {
+          "Key": 68,
+          "Value": 68
+        },
+        {
+          "Key": 69,
+          "Value": 69
+        },
+        {
+          "Key": 70,
+          "Value": 70
+        },
+        {
+          "Key": 71,
+          "Value": 71
+        },
+        {
+          "Key": 72,
+          "Value": 72
+        },
+        {
+          "Key": 73,
+          "Value": 73
+        },
+        {
+          "Key": 74,
+          "Value": 74
+        },
+        {
+          "Key": 75,
+          "Value": 75
+        },
+        {
+          "Key": 76,
+          "Value": 76
+        },
+        {
+          "Key": 77,
+          "Value": 77
+        },
+        {
+          "Key": 78,
+          "Value": 78
+        },
+        {
+          "Key": 79,
+          "Value": 79
+        },
+        {
+          "Key": 80,
+          "Value": 80
+        },
+        {
+          "Key": 81,
+          "Value": 81
+        },
+        {
+          "Key": 82,
+          "Value": 82
+        },
+        {
+          "Key": 83,
+          "Value": 83
+        },
+        {
+          "Key": 84,
+          "Value": 84
+        },
+        {
+          "Key": 85,
+          "Value": 85
+        },
+        {
+          "Key": 86,
+          "Value": 86
+        },
+        {
+          "Key": 87,
+          "Value": 87
+        },
+        {
+          "Key": 88,
+          "Value": 88
+        },
+        {
+          "Key": 89,
+          "Value": 89
+        },
+        {
+          "Key": 90,
+          "Value": 90
+        },
+        {
+          "Key": 91,
+          "Value": 91
+        },
+        {
+          "Key": 92,
+          "Value": 92
+        },
+        {
+          "Key": 93,
+          "Value": 93
+        },
+        {
+          "Key": 94,
+          "Value": 94
+        },
+        {
+          "Key": 95,
+          "Value": 95
+        },
+        {
+          "Key": 96,
+          "Value": 96
+        },
+        {
+          "Key": 97,
+          "Value": 97
+        },
+        {
+          "Key": 98,
+          "Value": 98
+        },
+        {
+          "Key": 99,
+          "Value": 99
+        },
+        {
+          "Key": 100,
+          "Value": 100
+        },
+        {
+          "Key": 101,
+          "Value": 101
+        },
+        {
+          "Key": 102,
+          "Value": 102
+        },
+        {
+          "Key": 103,
+          "Value": 103
+        },
+        {
+          "Key": 104,
+          "Value": 104
+        },
+        {
+          "Key": 105,
+          "Value": 105
+        },
+        {
+          "Key": 106,
+          "Value": 106
+        },
+        {
+          "Key": 107,
+          "Value": 107
+        },
+        {
+          "Key": 108,
+          "Value": 108
+        },
+        {
+          "Key": 109,
+          "Value": 109
+        },
+        {
+          "Key": 110,
+          "Value": 110
+        },
+        {
+          "Key": 111,
+          "Value": 111
+        },
+        {
+          "Key": 112,
+          "Value": 112
+        },
+        {
+          "Key": 113,
+          "Value": 113
+        },
+        {
+          "Key": 114,
+          "Value": 114
+        },
+        {
+          "Key": 115,
+          "Value": 115
+        },
+        {
+          "Key": 116,
+          "Value": 116
+        },
+        {
+          "Key": 117,
+          "Value": 117
+        },
+        {
+          "Key": 118,
+          "Value": 118
+        },
+        {
+          "Key": 119,
+          "Value": 119
+        },
+        {
+          "Key": 120,
+          "Value": 120
+        },
+        {
+          "Key": 121,
+          "Value": 121
+        },
+        {
+          "Key": 122,
+          "Value": 122
+        },
+        {
+          "Key": 123,
+          "Value": 123
+        },
+        {
+          "Key": 124,
+          "Value": 124
+        },
+        {
+          "Key": 125,
+          "Value": 125
+        },
+        {
+          "Key": 126,
+          "Value": 126
+        },
+        {
+          "Key": 127,
+          "Value": 127
+        },
+        {
+          "Key": 128,
+          "Value": 128
+        },
+        {
+          "Key": 129,
+          "Value": 129
+        },
+        {
+          "Key": 130,
+          "Value": 130
+        },
+        {
+          "Key": 131,
+          "Value": 131
+        },
+        {
+          "Key": 132,
+          "Value": 132
+        },
+        {
+          "Key": 133,
+          "Value": 133
+        },
+        {
+          "Key": 134,
+          "Value": 134
+        },
+        {
+          "Key": 135,
+          "Value": 135
+        },
+        {
+          "Key": 136,
+          "Value": 136
+        },
+        {
+          "Key": 137,
+          "Value": 137
+        },
+        {
+          "Key": 138,
+          "Value": 138
+        },
+        {
+          "Key": 139,
+          "Value": 139
+        },
+        {
+          "Key": 140,
+          "Value": 140
+        },
+        {
+          "Key": 141,
+          "Value": 141
+        },
+        {
+          "Key": 142,
+          "Value": 142
+        },
+        {
+          "Key": 143,
+          "Value": 143
+        },
+        {
+          "Key": 144,
+          "Value": 144
+        },
+        {
+          "Key": 145,
+          "Value": 145
+        },
+        {
+          "Key": 146,
+          "Value": 146
+        },
+        {
+          "Key": 147,
+          "Value": 147
+        },
+        {
+          "Key": 148,
+          "Value": 148
+        },
+        {
+          "Key": 149,
+          "Value": 149
+        },
+        {
+          "Key": 150,
+          "Value": 150
+        },
+        {
+          "Key": 151,
+          "Value": 151
+        },
+        {
+          "Key": 152,
+          "Value": 152
+        },
+        {
+          "Key": 153,
+          "Value": 153
+        },
+        {
+          "Key": 154,
+          "Value": 154
+        },
+        {
+          "Key": 155,
+          "Value": 155
+        },
+        {
+          "Key": 156,
+          "Value": 156
+        },
+        {
+          "Key": 157,
+          "Value": 157
+        },
+        {
+          "Key": 158,
+          "Value": 158
+        },
+        {
+          "Key": 159,
+          "Value": 159
+        },
+        {
+          "Key": 160,
+          "Value": 160
+        },
+        {
+          "Key": 161,
+          "Value": 161
+        },
+        {
+          "Key": 162,
+          "Value": 162
+        },
+        {
+          "Key": 163,
+          "Value": 163
+        },
+        {
+          "Key": 164,
+          "Value": 164
+        },
+        {
+          "Key": 165,
+          "Value": 165
+        },
+        {
+          "Key": 166,
+          "Value": 166
+        },
+        {
+          "Key": 167,
+          "Value": 167
+        },
+        {
+          "Key": 168,
+          "Value": 168
+        },
+        {
+          "Key": 169,
+          "Value": 169
+        },
+        {
+          "Key": 170,
+          "Value": 170
+        },
+        {
+          "Key": 171,
+          "Value": 171
+        },
+        {
+          "Key": 172,
+          "Value": 172
+        },
+        {
+          "Key": 173,
+          "Value": 173
+        },
+        {
+          "Key": 174,
+          "Value": 174
+        },
+        {
+          "Key": 175,
+          "Value": 175
+        },
+        {
+          "Key": 176,
+          "Value": 176
+        },
+        {
+          "Key": 177,
+          "Value": 177
+        },
+        {
+          "Key": 178,
+          "Value": 178
+        },
+        {
+          "Key": 179,
+          "Value": 179
+        },
+        {
+          "Key": 180,
+          "Value": 180
+        },
+        {
+          "Key": 181,
+          "Value": 181
+        },
+        {
+          "Key": 182,
+          "Value": 182
+        },
+        {
+          "Key": 183,
+          "Value": 183
+        },
+        {
+          "Key": 184,
+          "Value": 184
+        },
+        {
+          "Key": 185,
+          "Value": 185
+        },
+        {
+          "Key": 186,
+          "Value": 186
+        },
+        {
+          "Key": 187,
+          "Value": 187
+        },
+        {
+          "Key": 188,
+          "Value": 188
+        },
+        {
+          "Key": 189,
+          "Value": 189
+        },
+        {
+          "Key": 190,
+          "Value": 190
+        },
+        {
+          "Key": 191,
+          "Value": 191
+        },
+        {
+          "Key": 192,
+          "Value": 192
+        },
+        {
+          "Key": 193,
+          "Value": 193
+        },
+        {
+          "Key": 194,
+          "Value": 194
+        },
+        {
+          "Key": 195,
+          "Value": 195
+        },
+        {
+          "Key": 196,
+          "Value": 196
+        },
+        {
+          "Key": 197,
+          "Value": 197
+        },
+        {
+          "Key": 198,
+          "Value": 198
+        },
+        {
+          "Key": 199,
+          "Value": 199
+        },
+        {
+          "Key": 200,
+          "Value": 200
+        },
+        {
+          "Key": 201,
+          "Value": 201
+        },
+        {
+          "Key": 202,
+          "Value": 202
+        },
+        {
+          "Key": 203,
+          "Value": 203
+        },
+        {
+          "Key": 204,
+          "Value": 204
+        },
+        {
+          "Key": 205,
+          "Value": 205
+        },
+        {
+          "Key": 206,
+          "Value": 206
+        },
+        {
+          "Key": 207,
+          "Value": 207
+        },
+        {
+          "Key": 208,
+          "Value": 208
+        },
+        {
+          "Key": 209,
+          "Value": 209
+        },
+        {
+          "Key": 210,
+          "Value": 210
+        },
+        {
+          "Key": 211,
+          "Value": 211
+        },
+        {
+          "Key": 212,
+          "Value": 212
+        },
+        {
+          "Key": 213,
+          "Value": 213
+        },
+        {
+          "Key": 214,
+          "Value": 214
+        },
+        {
+          "Key": 215,
+          "Value": 215
+        },
+        {
+          "Key": 216,
+          "Value": 216
+        },
+        {
+          "Key": 217,
+          "Value": 217
+        },
+        {
+          "Key": 218,
+          "Value": 218
+        },
+        {
+          "Key": 219,
+          "Value": 219
+        },
+        {
+          "Key": 220,
+          "Value": 220
+        },
+        {
+          "Key": 221,
+          "Value": 221
+        },
+        {
+          "Key": 222,
+          "Value": 222
+        },
+        {
+          "Key": 223,
+          "Value": 223
+        },
+        {
+          "Key": 224,
+          "Value": 224
+        },
+        {
+          "Key": 225,
+          "Value": 225
+        },
+        {
+          "Key": 226,
+          "Value": 226
+        },
+        {
+          "Key": 227,
+          "Value": 227
+        },
+        {
+          "Key": 228,
+          "Value": 228
+        },
+        {
+          "Key": 229,
+          "Value": 229
+        },
+        {
+          "Key": 230,
+          "Value": 230
+        },
+        {
+          "Key": 231,
+          "Value": 231
+        },
+        {
+          "Key": 232,
+          "Value": 232
+        },
+        {
+          "Key": 233,
+          "Value": 233
+        },
+        {
+          "Key": 234,
+          "Value": 234
+        },
+        {
+          "Key": 235,
+          "Value": 235
+        },
+        {
+          "Key": 236,
+          "Value": 236
+        },
+        {
+          "Key": 237,
+          "Value": 237
+        },
+        {
+          "Key": 238,
+          "Value": 238
+        },
+        {
+          "Key": 239,
+          "Value": 239
+        },
+        {
+          "Key": 240,
+          "Value": 240
+        },
+        {
+          "Key": 241,
+          "Value": 241
+        },
+        {
+          "Key": 242,
+          "Value": 242
+        },
+        {
+          "Key": 243,
+          "Value": 243
+        },
+        {
+          "Key": 244,
+          "Value": 244
+        },
+        {
+          "Key": 245,
+          "Value": 245
+        },
+        {
+          "Key": 246,
+          "Value": 246
+        },
+        {
+          "Key": 247,
+          "Value": 247
+        },
+        {
+          "Key": 248,
+          "Value": 248
+        },
+        {
+          "Key": 249,
+          "Value": 249
+        },
+        {
+          "Key": 250,
+          "Value": 250
+        },
+        {
+          "Key": 251,
+          "Value": 251
+        },
+        {
+          "Key": 252,
+          "Value": 252
+        },
+        {
+          "Key": 253,
+          "Value": 253
+        },
+        {
+          "Key": 254,
+          "Value": 254
+        },
+        {
+          "Key": 255,
+          "Value": 255
+        }
       ]
     },
     {
-      "Name": "Expiration Tag",
-      "StartBit": 14,
-      "Length": 3,
-      "Description": "7 expiration durations",
+      "Name": "Discrepancies",
+      "StartBit": 19,
+      "Length": 6,
+      "Description": "63 Details for scan",
       "Values": [
-        { "Key": 0, "Value": "No value" },
-        { "Key": 1, "Value": "3 days" },
-        { "Key": 2, "Value": "1 week" },
-        { "Key": 3, "Value": "2 weeks" },
-        { "Key": 4, "Value": "1 month" },
-        { "Key": 5, "Value": "3 months" },
-        { "Key": 6, "Value": "6 months" },
-        { "Key": 7, "Value": "1 year" }
+        {
+          "Key": 0,
+          "Value": "No value"
+        },
+        {
+          "Key": 1,
+          "Value": "105 Loose, missing, or faulty - bolts, nuts, screws, rivets, safety wire, cotter keys, fasteners, and like items."
+        },
+        {
+          "Key": 2,
+          "Value": "110 Unintentional departure of objects from aircraft, airborne, or on the ground"
+        },
+        {
+          "Key": 3,
+          "Value": "301 FOD"
+        },
+        {
+          "Key": 4,
+          "Value": "302 Foreign object - safety wire, fasteners, tools, or other objects discovered in aeronautical equipment which could lead to fod if not removed"
+        },
+        {
+          "Key": 5,
+          "Value": "020 Worn, stripped, chafed, frayed - except electrical wiring"
+        },
+        {
+          "Key": 6,
+          "Value": "070 Broken, burst, ruptured, punctured, torn, cut"
+        },
+        {
+          "Key": 7,
+          "Value": "117 Deteriorated/eroded"
+        },
+        {
+          "Key": 8,
+          "Value": "135 Binding, stuck, jammed"
+        },
+        {
+          "Key": 9,
+          "Value": "190 Cracked, crazed"
+        },
+        {
+          "Key": 10,
+          "Value": "381 Leaking - internal or external"
+        },
+        {
+          "Key": 11,
+          "Value": "425 Nicked or chipped"
+        },
+        {
+          "Key": 12,
+          "Value": "429 Peeled or blistered"
+        },
+        {
+          "Key": 13,
+          "Value": "520 Pitted"
+        },
+        {
+          "Key": 14,
+          "Value": "585 Sheared"
+        },
+        {
+          "Key": 15,
+          "Value": "622 Wet"
+        },
+        {
+          "Key": 16,
+          "Value": "696 Fluid low"
+        },
+        {
+          "Key": 17,
+          "Value": "780 Bent, buckled, dented, collapsed distorted, or twisted"
+        },
+        {
+          "Key": 18,
+          "Value": "781 Tire leakage excessive or blowout"
+        },
+        {
+          "Key": 19,
+          "Value": "782 Defective or damaged tire sidewall, tread, bead, etc."
+        },
+        {
+          "Key": 20,
+          "Value": "846 Delaminated"
+        },
+        {
+          "Key": 21,
+          "Value": "900 Burned or overheated"
+        },
+        {
+          "Key": 22,
+          "Value": "932 Does not engage, lock or unlock properly"
+        },
+        {
+          "Key": 23,
+          "Value": "935 Scored, scratched, gouged, burred"
+        },
+        {
+          "Key": 24,
+          "Value": "127 ADJUSTMENT OR ALIGNMENT IMPROPER"
+        },
+        {
+          "Key": 25,
+          "Value": "410 LACK OF/IMPROPER LUBRICATION"
+        },
+        {
+          "Key": 26,
+          "Value": "LO1 Gap sealant discrepancy (Missing, high, low or incorrect material)"
+        },
+        {
+          "Key": 27,
+          "Value": "LO2 RAM discrepancy (Loose, Cracked, Peeled, Gouged, bubbled, wrinkled, reverted or missing)"
+        },
+        {
+          "Key": 28,
+          "Value": "LO3 Blade Seal damaged or missing"
+        },
+        {
+          "Key": 29,
+          "Value": "LO4 Mold Line Mismatch"
+        },
+        {
+          "Key": 30,
+          "Value": "LO5 Trailing edge boot damaged or missing (on aileron, trailing edge flap, or rudder)"
+        },
+        {
+          "Key": 31,
+          "Value": "C01 Light surface corrosion "
+        },
+        {
+          "Key": 32,
+          "Value": "C02 Moderate surface corrosion "
+        },
+        {
+          "Key": 33,
+          "Value": "C03 Severe surface corrosion "
+        },
+        {
+          "Key": 34,
+          "Value": "C11 Light pitting corrosion "
+        },
+        {
+          "Key": 35,
+          "Value": "C12 Moderate pitting corrosion "
+        },
+        {
+          "Key": 36,
+          "Value": "C13 Severe pitting corrosion "
+        },
+        {
+          "Key": 37,
+          "Value": "C21 Light exfoliation corrosion "
+        },
+        {
+          "Key": 38,
+          "Value": "C22 Moderate exfoliation corrosion "
+        },
+        {
+          "Key": 39,
+          "Value": "C23 Severe exfoliation corrosion "
+        },
+        {
+          "Key": 40,
+          "Value": "W00 Chafing against combustible/bleed airlines"
+        },
+        {
+          "Key": 41,
+          "Value": "W01 Chafing against structure/components/non-combustible line"
+        },
+        {
+          "Key": 42,
+          "Value": "W02 Chafing against control cables/flight control components"
+        },
+        {
+          "Key": 43,
+          "Value": "W03 Chafing against other wire/wire bundle assembly"
+        },
+        {
+          "Key": 44,
+          "Value": "W04 Chafing against chafe protection material/components"
+        },
+        {
+          "Key": 45,
+          "Value": "W05 Chafed/frayed grounding/bonding strap"
+        },
+        {
+          "Key": 46,
+          "Value": "W13 Corroded connector/backshell (external)"
+        },
+        {
+          "Key": 47,
+          "Value": "W15 Improper/damaged/missing potting, seal plugs, or sealant"
+        },
+        {
+          "Key": 48,
+          "Value": "W16 Missing/damaged rubber boot"
+        }
       ]
     },
     {
-      "Name": "Discount Code",
-      "StartBit": 17,
-      "Length": 3,
-      "Description": "7 discount or promo codes",
+      "Name": "Document IDs",
+      "StartBit": 25,
+      "Length": 7,
+      "Description": "127 JCN IDs",
       "Values": [
-        { "Key": 0, "Value": "No value" },
-        { "Key": 1, "Value": "None" },
-        { "Key": 2, "Value": "10% Off" },
-        { "Key": 3, "Value": "BOGO" },
-        { "Key": 4, "Value": "Manager's Special" },
-        { "Key": 5, "Value": "Clearance" },
-        { "Key": 6, "Value": "Seasonal Sale" },
-        { "Key": 7, "Value": "Loyalty Discount" }
+        {
+          "Key": 0,
+          "Value": "No value"
+        },
+        {
+          "Key": 1,
+          "Value": 1
+        },
+        {
+          "Key": 2,
+          "Value": 2
+        },
+        {
+          "Key": 3,
+          "Value": 3
+        },
+        {
+          "Key": 4,
+          "Value": 4
+        },
+        {
+          "Key": 5,
+          "Value": 5
+        },
+        {
+          "Key": 6,
+          "Value": 6
+        },
+        {
+          "Key": 7,
+          "Value": 7
+        },
+        {
+          "Key": 8,
+          "Value": 8
+        },
+        {
+          "Key": 9,
+          "Value": 9
+        },
+        {
+          "Key": 10,
+          "Value": 10
+        },
+        {
+          "Key": 11,
+          "Value": 11
+        },
+        {
+          "Key": 12,
+          "Value": 12
+        },
+        {
+          "Key": 13,
+          "Value": 13
+        },
+        {
+          "Key": 14,
+          "Value": 14
+        },
+        {
+          "Key": 15,
+          "Value": 15
+        },
+        {
+          "Key": 16,
+          "Value": 16
+        },
+        {
+          "Key": 17,
+          "Value": 17
+        },
+        {
+          "Key": 18,
+          "Value": 18
+        },
+        {
+          "Key": 19,
+          "Value": 19
+        },
+        {
+          "Key": 20,
+          "Value": 20
+        },
+        {
+          "Key": 21,
+          "Value": 21
+        },
+        {
+          "Key": 22,
+          "Value": 22
+        },
+        {
+          "Key": 23,
+          "Value": 23
+        },
+        {
+          "Key": 24,
+          "Value": 24
+        },
+        {
+          "Key": 25,
+          "Value": 25
+        },
+        {
+          "Key": 26,
+          "Value": 26
+        },
+        {
+          "Key": 27,
+          "Value": 27
+        },
+        {
+          "Key": 28,
+          "Value": 28
+        },
+        {
+          "Key": 29,
+          "Value": 29
+        },
+        {
+          "Key": 30,
+          "Value": 30
+        },
+        {
+          "Key": 31,
+          "Value": 31
+        },
+        {
+          "Key": 32,
+          "Value": 32
+        },
+        {
+          "Key": 33,
+          "Value": 33
+        },
+        {
+          "Key": 34,
+          "Value": 34
+        },
+        {
+          "Key": 35,
+          "Value": 35
+        },
+        {
+          "Key": 36,
+          "Value": 36
+        },
+        {
+          "Key": 37,
+          "Value": 37
+        },
+        {
+          "Key": 38,
+          "Value": 38
+        },
+        {
+          "Key": 39,
+          "Value": 39
+        },
+        {
+          "Key": 40,
+          "Value": 40
+        },
+        {
+          "Key": 41,
+          "Value": 41
+        },
+        {
+          "Key": 42,
+          "Value": 42
+        },
+        {
+          "Key": 43,
+          "Value": 43
+        },
+        {
+          "Key": 44,
+          "Value": 44
+        },
+        {
+          "Key": 45,
+          "Value": 45
+        },
+        {
+          "Key": 46,
+          "Value": 46
+        },
+        {
+          "Key": 47,
+          "Value": 47
+        },
+        {
+          "Key": 48,
+          "Value": 48
+        },
+        {
+          "Key": 49,
+          "Value": 49
+        },
+        {
+          "Key": 50,
+          "Value": 50
+        },
+        {
+          "Key": 51,
+          "Value": 51
+        },
+        {
+          "Key": 52,
+          "Value": 52
+        },
+        {
+          "Key": 53,
+          "Value": 53
+        },
+        {
+          "Key": 54,
+          "Value": 54
+        },
+        {
+          "Key": 55,
+          "Value": 55
+        },
+        {
+          "Key": 56,
+          "Value": 56
+        },
+        {
+          "Key": 57,
+          "Value": 57
+        },
+        {
+          "Key": 58,
+          "Value": 58
+        },
+        {
+          "Key": 59,
+          "Value": 59
+        },
+        {
+          "Key": 60,
+          "Value": 60
+        },
+        {
+          "Key": 61,
+          "Value": 61
+        },
+        {
+          "Key": 62,
+          "Value": 62
+        },
+        {
+          "Key": 63,
+          "Value": 63
+        },
+        {
+          "Key": 64,
+          "Value": 64
+        },
+        {
+          "Key": 65,
+          "Value": 65
+        },
+        {
+          "Key": 66,
+          "Value": 66
+        },
+        {
+          "Key": 67,
+          "Value": 67
+        },
+        {
+          "Key": 68,
+          "Value": 68
+        },
+        {
+          "Key": 69,
+          "Value": 69
+        },
+        {
+          "Key": 70,
+          "Value": 70
+        },
+        {
+          "Key": 71,
+          "Value": 71
+        },
+        {
+          "Key": 72,
+          "Value": 72
+        },
+        {
+          "Key": 73,
+          "Value": 73
+        },
+        {
+          "Key": 74,
+          "Value": 74
+        },
+        {
+          "Key": 75,
+          "Value": 75
+        },
+        {
+          "Key": 76,
+          "Value": 76
+        },
+        {
+          "Key": 77,
+          "Value": 77
+        },
+        {
+          "Key": 78,
+          "Value": 78
+        },
+        {
+          "Key": 79,
+          "Value": 79
+        },
+        {
+          "Key": 80,
+          "Value": 80
+        },
+        {
+          "Key": 81,
+          "Value": 81
+        },
+        {
+          "Key": 82,
+          "Value": 82
+        },
+        {
+          "Key": 83,
+          "Value": 83
+        },
+        {
+          "Key": 84,
+          "Value": 84
+        },
+        {
+          "Key": 85,
+          "Value": 85
+        },
+        {
+          "Key": 86,
+          "Value": 86
+        },
+        {
+          "Key": 87,
+          "Value": 87
+        },
+        {
+          "Key": 88,
+          "Value": 88
+        },
+        {
+          "Key": 89,
+          "Value": 89
+        },
+        {
+          "Key": 90,
+          "Value": 90
+        },
+        {
+          "Key": 91,
+          "Value": 91
+        },
+        {
+          "Key": 92,
+          "Value": 92
+        },
+        {
+          "Key": 93,
+          "Value": 93
+        },
+        {
+          "Key": 94,
+          "Value": 94
+        },
+        {
+          "Key": 95,
+          "Value": 95
+        },
+        {
+          "Key": 96,
+          "Value": 96
+        },
+        {
+          "Key": 97,
+          "Value": 97
+        },
+        {
+          "Key": 98,
+          "Value": 98
+        },
+        {
+          "Key": 99,
+          "Value": 99
+        },
+        {
+          "Key": 100,
+          "Value": 100
+        },
+        {
+          "Key": 101,
+          "Value": 101
+        },
+        {
+          "Key": 102,
+          "Value": 102
+        },
+        {
+          "Key": 103,
+          "Value": 103
+        },
+        {
+          "Key": 104,
+          "Value": 104
+        },
+        {
+          "Key": 105,
+          "Value": 105
+        },
+        {
+          "Key": 106,
+          "Value": 106
+        },
+        {
+          "Key": 107,
+          "Value": 107
+        },
+        {
+          "Key": 108,
+          "Value": 108
+        },
+        {
+          "Key": 109,
+          "Value": 109
+        },
+        {
+          "Key": 110,
+          "Value": 110
+        },
+        {
+          "Key": 111,
+          "Value": 111
+        },
+        {
+          "Key": 112,
+          "Value": 112
+        },
+        {
+          "Key": 113,
+          "Value": 113
+        },
+        {
+          "Key": 114,
+          "Value": 114
+        },
+        {
+          "Key": 115,
+          "Value": 115
+        },
+        {
+          "Key": 116,
+          "Value": 116
+        },
+        {
+          "Key": 117,
+          "Value": 117
+        },
+        {
+          "Key": 118,
+          "Value": 118
+        },
+        {
+          "Key": 119,
+          "Value": 119
+        },
+        {
+          "Key": 120,
+          "Value": 120
+        },
+        {
+          "Key": 121,
+          "Value": 121
+        },
+        {
+          "Key": 122,
+          "Value": 122
+        },
+        {
+          "Key": 123,
+          "Value": 123
+        },
+        {
+          "Key": 124,
+          "Value": 124
+        },
+        {
+          "Key": 125,
+          "Value": 125
+        },
+        {
+          "Key": 126,
+          "Value": 126
+        },
+        {
+          "Key": 127,
+          "Value": 127
+        }
       ]
     }
-  ]
+  ],
+  "Inter Field Changes": [],
+  "Intra Field Changes": []
 }
