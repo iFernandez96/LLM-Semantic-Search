@@ -9,15 +9,18 @@ def chunk_of_schema(query):
     best_line = ""
     best_word = ""
     best_lines = []
+
     max_index = 0
     chunk = []
     chunk_size = 100
     
     for word in query.split("\n"):
-        # print(word)
         for i, line in enumerate(lines):
-            similarity = fuzz.token_sort_ratio(word, line)
-            if similarity > max_similarity:
+            line = line.strip().replace('"', '')
+            # print(f"Comparing:\n  word: '{word.lower()}'\n  line: '{line.lower()}'")
+            similarity = fuzz.ratio(word.lower(), line.lower())
+            # print(f"Line {i}: {line!r}, Similarity: {similarity}")
+            if similarity >= max_similarity:
                 max_similarity = similarity
                 best_line = line
                 best_lines = lines
@@ -26,18 +29,14 @@ def chunk_of_schema(query):
     
     print(best_word)
     print(best_line)
-    # print(best_lines)
     print(max_similarity)
-
-    # print(best_lines[max_index])
-    if max_index - 50 > 0:
+    
+    if max_index - chunk_size > 0:
         chunk = best_lines[max_index - chunk_size: max_index + chunk_size]
     else:
         chunk = best_lines[0 : max_index + chunk_size]
 
     pprint.pprint(chunk)
-
-
 
 search_in_schema = input("Enter Word(s): ")
 chunk_of_schema(search_in_schema)
