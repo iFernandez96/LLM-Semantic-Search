@@ -12,7 +12,9 @@ def chunk_of_schema(query):
 
     max_index = 0
     chunk = []
-    chunk_size = 100
+    print(f"LINES IN TEXT FILE: {len(lines)}")
+    chunk_size = (int)(len(lines)/2)//2
+    print(f"CHUNK SIZE: {chunk_size}")
     
     for word in query.split("\n"):
         for i, line in enumerate(lines):
@@ -27,10 +29,10 @@ def chunk_of_schema(query):
                 max_index = i
                 best_word = word
     
-    print(best_word)
-    print(best_line)
-    print(max_similarity)
-    
+    print(f"QUERY SENT: {best_word}")
+    print(f"BEST MATCH: {best_line}")
+    print(f"SIMILARITY SCORE: {max_similarity}")
+
     if max_index - chunk_size > 0:
         chunk = best_lines[max_index - chunk_size: max_index + chunk_size]
     else:
