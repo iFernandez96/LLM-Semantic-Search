@@ -6,21 +6,17 @@ def chunk_of_schema(query):
         lines = schemaFile.readlines()
 
     max_similarity = 0
-
     best_line = ""
-
     best_word = ""
-
     best_lines = []
-
     max_index = 0
-
     chunk = []
+    chunk_size = 100
     
-    for word in query.split(" "):
+    for word in query.split("\n"):
         # print(word)
         for i, line in enumerate(lines):
-            similarity = fuzz.WRatio(word, line)
+            similarity = fuzz.token_sort_ratio(word, line)
             if similarity > max_similarity:
                 max_similarity = similarity
                 best_line = line
@@ -35,9 +31,9 @@ def chunk_of_schema(query):
 
     # print(best_lines[max_index])
     if max_index - 50 > 0:
-        chunk = best_lines[max_index - 150: max_index + 150]
+        chunk = best_lines[max_index - chunk_size: max_index + chunk_size]
     else:
-        chunk = best_lines[0 : max_index + 150]
+        chunk = best_lines[0 : max_index + chunk_size]
 
     pprint.pprint(chunk)
 
