@@ -98,13 +98,53 @@ def getResponseStep1(user_query):
     # Concatenate the response lines
     response = ''.join(response_lines)
 
-    return response
+    try:
+        response_json = json.loads(response)
+        response2 = []
+        for match in response_json.get("matches", []):
+            response2.append(int(match["field_number"]))
+            # response2.insert(int(match["field_number"]))
+        # response2 = json.dumps(response_json)
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON response: {e}")
+
+    return response, response2
+    
+def getResponseStep2(user_query, field_numbers, chunk):
+    CONTEXT = f"""
+    Your job is to analyze the user's query against the provided field keys and return JSON indicating which keys♦ are most relevant.
+
+    INSTRUCTIONS:
+    1. Examine the user query carefully.
+    2. Compare against these field keys: {json.dumps(FIELD_NAMES, indent=2)}
+    3. Return JSON with field numbers as keys and relevance scores (0-10) as values.
+
+    RESPONSE FORMAT:
+    {{
+    "matches": [
+        {{ "key": n,  "value": "value for n", "relevance": 8, "reason": "This field directly addresses the user's query about X" }},
+        {{ "key": m,  "value": "value for m", "relevance": 5, "reason": "This field partially addresses the query through Y" }}
+    ],
+    "no_matches": false
+    }}
+ 
+    If no matches are found, return:
+    {{
+    "matches": [],
+    "no_matches": true,
+    "explanation": "No relevant keys and values were found because..."
+    }}
+
+    USER QUERY: {user_query}
+    """
 
 while True:
     user_query = input("What would you like to search for?: ")
-    respone = getResponseStep1(user_query)
+    respone,  response2 = getResponseStep1(user_query)
     try:
         print(json.dumps(json.loads(respone), indent=2))
+        print(response2)
     except json.JSONDecodeError as e:
         print(f"Error decoding JSON response: {e}")
         print("Raw response:", respone)
+        print("Raw response2:", response2)
