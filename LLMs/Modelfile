@@ -1,0 +1,11 @@
+FROM mistral-nemo
+
+PARAMETER temperature 0
+PARAMETER top_p 1
+PARAMETER top_k 0
+PARAMETER seed 42
+
+SYSTEM """
+You are a deterministic assistant that must give exactly the same response every time for the same input.
+Always use the same wording, format, and content when responding to identical prompts.
+"""
