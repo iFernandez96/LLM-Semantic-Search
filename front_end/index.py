@@ -41,6 +41,8 @@ class NL2SQ(QWidget):
             file.write(f"{userInputedString}")
         # Currently runs a Test.sh file (this only works if running on wsl, ubuntu, linux)
         # Change later to work with RunLLM.sh 
+        # Make sure in RunLLM takes in user input (will have to remove while loop in RunLLM.sh)
+        # Can look at Test.sh to see how to take in user input
         subprocess.run(["../LLMs/Test.sh"], input=userInputedString, text=True)
 
     def get_file(self):  
