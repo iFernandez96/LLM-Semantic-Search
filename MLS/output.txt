@@ -1,0 +1,176 @@
+['{
+        "matches": [
+            {
+                "key": 0,
+                "value": "No value",
+                "relevance": 10,
+                "reason": "The user is asking for all values of the field, so we only return \'No Value\'"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 0,
+                "value": "No value",
+                "relevance": 10,
+                "reason": "The user is asking for all values of the field \'Panel Category\', so we should only return the key where the value is \'No Value\'"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 100,
+                "value": 316,
+                "relevance": 8,
+                "reason": "This field directly addresses the user\'s query about corrosion"
+            },
+            {
+                "key": 101,
+                "value": "317 L",
+                "relevance": 5,
+                "reason": "This field partially addresses the query through \'L\' which could indicate left side corrosion"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 150,
+                "value": "130 L",
+                "relevance": 7,
+                "reason": "This panel is susceptible to corrosion due to its location."
+            },
+            {
+                "key": 151,
+                "value": "130 R",
+                "relevance": 7,
+                "reason": "Similarly, this panel also faces corrosion risks."
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 200,
+                "value": "41 R",
+                "relevance": 7,
+                "reason": "This panel might have corrosion issues as it\'s a common problem area."
+            },
+            {
+                "key": 201,
+                "value": "410 L",
+                "relevance": 6,
+                "reason": "Corrosion can occur on this panel due to its exposure to moisture."
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 0,
+                "value": "No value",
+                "relevance": 10,
+                "reason": "The user is asking for all values of the field \'Panel Category\', and this key represents \'No Value\'"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 0,
+                "value": "No value",
+                "relevance": 10,
+                "reason": "The user is asking for all values of the Panel Category field, so we only return the \'No Value\' key."
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 0,
+                "value": "No value",
+                "relevance": 10,
+                "reason": "The user is asking for all values of the field \'Panel Category\', so we only return the key where the value is \'No Value\'"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 401,
+                "value": "S4 L",
+                "relevance": 8,
+                "reason": "This field directly addresses the user\'s query about corrosion"
+            },
+            {
+                "key": 435,
+                "value": "92 L",
+                "relevance": 7,
+                "reason": "This field partially addresses the query through left side panels"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 450,
+                "value": "82 R",
+                "relevance": 7,
+                "reason": "This panel has \'R\' which might indicate corrosion"
+            },
+            {
+                "key": 451,
+                "value": "S37 R",
+                "relevance": 9,
+                "reason": "This panel explicitly indicates corrosion with \'R\'"
+            },
+            {
+                "key": 452,
+                "value": "S4 R",
+                "relevance": 9,
+                "reason": "This panel also explicitly indicates corrosion with \'R\'"
+            },
+            {
+                "key": 453,
+                "value": "85 R",
+                "relevance": 7,
+                "reason": "This panel has \'R\' which might indicate corrosion"
+            },
+            {
+                "key": 454,
+                "value": "84 R",
+                "relevance": 7,
+                "reason": "This panel has \'R\' which might indicate corrosion"
+            }
+        ],
+        "no_matches": false
+    }', '{
+        "matches": [
+            {
+                "key": 31,
+                "value": "C01 Light surface corrosion",
+                "relevance": 8,
+                "reason": "The user query explicitly asks for corrosion, and this field directly addresses that."
+            },
+            {
+                "key": 32,
+                "value": "C02 Moderate surface corrosion",
+                "relevance": 8,
+                "reason": "Similarly, this field also directly addresses the user\'s query about corrosion."
+            },
+            {
+                "key": 33,
+                "value": "C03 Severe surface corrosion",
+                "relevance": 8,
+                "reason": "This field also directly addresses the user\'s query about corrosion."
+            }
+        ],
+        "no_matches": false
+    }'
+]
+High Relevance Matches: [
+    {'field': 'Panel Category', 'field_number': '0', 'key': 0, 'value': 'No value'
+    }
+]
