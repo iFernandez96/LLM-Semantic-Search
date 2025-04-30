@@ -1,6 +1,6 @@
 import sys
 import subprocess
-from PyQt6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit, QFileDialog)
+from PyQt6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit, QFileDialog, QHBoxLayout)
 
 application = QApplication([])
 
@@ -9,10 +9,46 @@ userInputedString = None
 class NL2SQ(QWidget):
     def __init__(self):
         super().__init__()
-        self.setGeometry(500, 250, 250, 100)
+        self.setGeometry(500, 300, 300, 200)
+        self.setFixedSize(475,250)
         self.setWindowTitle("Natural Language to Structured Query")
         layout = QVBoxLayout()
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #1e1e1e;
+                color: #00ff00;
+                font-family: Consolas, monospace;
+                font-size: 14px;
+            }
 
+            QPlainTextEdit, QLineEdit {
+                background-color: #1e1e1e;
+                border: 1px solid #333;
+                padding: 5px;
+                color: #00ff00;
+            }
+
+            QPushButton {
+                background-color: #333;
+                border: 1px solid #555;
+                padding: 5px;
+                margin: 0px;
+                color: #00ff00;
+            }
+
+            QPushButton:hover {
+                background-color: #444;
+            }
+
+            QPushButton:pressed {
+                background-color: #555;
+            }
+
+            QFileDialog {
+                background-color: #1e1e1e;
+                color: #00ff00;
+            }
+        """)
 
         self.label = QLabel("What are you looking for?", self)
         layout.addWidget(self.label)
@@ -30,9 +66,19 @@ class NL2SQ(QWidget):
         self.submitLabel = QLabel("", self)
         layout.addWidget(self.submitLabel)
 
+        hLayout = QHBoxLayout()
+        hLayout.setSpacing(0)
+
+        self.fileLabel = QLabel("Insert a Schema:", self)
+        
         self.selectFileButton = QPushButton("Select a Schema", self)
         self.selectFileButton.clicked.connect(self.get_file)
-        layout.addWidget(self.selectFileButton)
+
+        hLayout.addWidget(self.fileLabel)
+        hLayout.addWidget(self.selectFileButton)
+        layout.addLayout(hLayout)
+
+        self.setLayout(layout)
 
     def button_clicked(self):
         self.submitLabel.setText("TEXT HAS BEEN SUBMITTED")
@@ -43,7 +89,7 @@ class NL2SQ(QWidget):
         # Change later to work with RunLLM.sh 
         # Make sure in RunLLM takes in user input (will have to remove while loop in RunLLM.sh)
         # Can look at Test.sh to see how to take in user input
-        subprocess.run(["../LLMs/Test.sh"], input=userInputedString, text=True)
+        subprocess.run(["../LLMs/RunLLM.sh"], input=userInputedString, text=True)
 
     def get_file(self):  
         # Include Pandas to convert .xlsx files into .txt files
@@ -60,7 +106,8 @@ class NL2SQ(QWidget):
                 standardFile.write(contents)
 
         print(f"File contents of {actualFile} have been read and move to user_selected_file_contents.txt")
-                
+
+
                 
 
 

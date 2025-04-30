@@ -47,15 +47,3 @@ Expected Output:"
 read query
 
 send_query "$query"
-
-Interactive query loop
-while true; do
-    echo ""
-    read -p "Enter a query (or type 'exit' to quit): " query
-    if [[ "$query" == "exit" ]]; then
-        echo "Exiting query system."
-        break
-    fi
-    send_query "$query"
-done
-
