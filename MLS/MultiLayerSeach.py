@@ -39,7 +39,7 @@ except Exception as e:
     ollama_process = None
 
 # Add a delay to give the service time to start
-time.sleep(2)
+time.sleep(3)
 
 def getResponseStep1(user_query):
     CONTEXT = f"""
@@ -226,17 +226,20 @@ def getResponseStep2(user_query, field_numbers, chunk):
 
 def getResponseStep3(user_query, gathered_data):
     CONTEXT = f"""
-    Your job is to analyze the data received and turn it into a structured logical query as instructed below.
+    Your job is to analyze the data received and the user query recieved and turn it into a structure as instructed below.
     
     INSTRUCTIONS:
     1. Examine the data and the user query carefully.
     2. If multiple fields are present, use '&&' meaning AND to combine them.
-    3. If looking for the inverse of a field, use '!' before the field number.
-    4. Return no words other than this structure: F(field_number)=K(key_number) (e.g., !F12=K23, F0=K1, F1=K3 && F2=K21, or !F19=K23 && F11=K27).
-    5. If looking for ALL VALUES of a certain field using key 0, do ! in front of the query
+    3. Return no words other than the given structure.
 
-    DATA:
-    Using this context to create a structed logical query: {json.dumps(gathered_data, indent=2)}
+    STRUCTURE:
+    F(field_number)=K(key_number) (e.g., F12=K23, F0=K1, F1=K3 && F2=K21, or F19=K23 && F11=K27).
+    
+    NOTE:
+    Only when searching for **ALL VALUES** of a certain field, use Key 0 and add a ! in front of the query. (e.g., !F3=K0, !F5=K0 && !F8=K0, !F6=K0 && F2=83).
+
+    DATA: {json.dumps(gathered_data, indent=2)}
     USER QUERY: {user_query}
     """
 
@@ -285,5 +288,5 @@ while True:
     print(raw)
     print("High Relevance Matches:", rvh)
 
-    structured_query = getResponseStep3(user_query, rvh)
+    structured_query = getResponseStep3(user_query.strip(), rvh)
     print("Structured Query:", structured_query)
