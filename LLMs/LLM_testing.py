@@ -3,6 +3,7 @@ import unittest
 import json
 import subprocess
 import time
+from LLMs.schema_loader import load_schema
 
 # Run Tests: python3 -m unittest LLMs/LLM_testing
 
@@ -308,6 +309,15 @@ class TestLLM(unittest.TestCase):
         self.assertEqual(response1, expected_output1)
         self.assertEqual(response2, expected_output2)
         self.assertEqual(response3, expected_output3)
+
+
+# TEMP TEST: Load and print schema for testing
+try:
+    corrosion_schema = load_schema("corrosion")
+    print("Corrosion schema loaded successfully:")
+    print(corrosion_schema)
+except Exception as e:
+    print(f"Schema loading failed: {e}")
 
 if __name__ == '__main__':
     unittest.main()
